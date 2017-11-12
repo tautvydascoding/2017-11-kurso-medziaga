@@ -1,0 +1,13 @@
+Goto-definition   - PHP f-ju atidarymui
+
+
+linter
+linter-htmlhint
+linter-csslint
+linter-jshint 
+
+ 
+beautify
+autoclose-html
+atom-autocomplete-php
+color-picker
