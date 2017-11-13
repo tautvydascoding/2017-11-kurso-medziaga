@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>
-Naujas Puslapis
-</title>
+<title>Augustas Butkus</title>
+<meta charset="UTF-8">
 </head>
 <body>
 
