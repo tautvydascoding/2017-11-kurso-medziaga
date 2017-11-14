@@ -1,4 +1,4 @@
-Goto-definition   - PHP f-ju atidarymui
+ Goto-definition   - PHP f-ju atidarymui
 
 
 linter
@@ -19,3 +19,4 @@ idea
 lorem
 ctrl + rodykles
 ctrl + d - dublicate row's
+ 
