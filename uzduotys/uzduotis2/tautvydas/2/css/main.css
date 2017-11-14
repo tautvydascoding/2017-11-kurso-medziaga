@@ -1,0 +1,36 @@
+h1 {
+    color: red;
+}
+h2 {
+    color: #16e0ae;
+    font-size: 2em;
+}
+body {
+    font-size: 16px;
+}
+h3 {
+    color: blue;
+}
+.spec2 {
+    background-color: #f1e91f;
+}
+#logo {
+    width: 100px;
+    height: 200px;
+}
+h1,
+h2,
+h3 {
+    font-weight: 100;
+}
+h3.spec2 {
+    background-color: red;
+}
+
+h3 .spec2 {
+    background-color: blue;
+}
+
+
+
+/**/
