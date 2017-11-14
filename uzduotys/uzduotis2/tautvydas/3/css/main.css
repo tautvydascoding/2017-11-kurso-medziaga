@@ -1,0 +1,39 @@
+* {
+    /*  bemelius iskaiciujam i ploti   */
+    box-sizing: border-box;
+}
+/*   -----------------   */
+h1 {
+    color: blue;
+    text-align: center;
+}
+article {
+    background-color: #a1a1a1;
+    border: solid 1px #000;
+    position: relative;
+    margin-left: 2.5%;
+
+    /* turinys vienoje eilute */
+    width: 30%;
+    float: left;
+}
+h2 {
+    background-color: red;
+    padding-left: 30px;
+    margin-top: 0px;
+    /* skraidantins elementas -rukas */
+    /* absolute reik: top/left/bottom ir  "reletive" uzdeti ant tevo*/
+    position: absolute;
+    top: 0px;    /* !!! veikia tik su position: absolute; */
+    right: 0px;  /* !!! veikia tik su position: absolute; */
+}
+p {
+    padding-top: 60px;
+}
+body {
+    margin: 0;
+}
+
+
+
+/**/
