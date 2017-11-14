@@ -1,3 +1,33 @@
+/*pasalektinam viska, kad remeliai ieitu i ploti, n perkeltu i kita eilute*/
+*{
+box-sizing: border-box;
+}
+article {
+float: left;
+width: 30.3%;
+background-color: red;
+border: 1px solid #000;\
+position: relative; /*reikia jei vaike nurodai "absolute" */
+margin-left: 2.5%;
+}
+
 h1 {
+  text-align: center;
   color: blue;
+}
+h2{
+/*absolute reikia nurodyti puse ir relative uzdet tevui*/
+position: absolute;
+top: 0px;
+/*veikia tik su position "absolute"*/
+right: 0px;
+border: 1px solid;
+margin: 0px;
+}
+p {
+  padding-top: 60px;
+}
+body{
+  margin: 0px;
+  padding: 0px;
 }
