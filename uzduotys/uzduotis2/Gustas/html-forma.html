@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1> HTML forma</h1>
+    <form class="" action="index.html" method="post">
+      <label for="fname">Name</label>
+      <input style="padding-right: 100px" type="text" placeholder="first name" name="fname" value="" min="0" max="30" autofocus required/> <br />
+
+      <label for="lname">Last Name</label>
+      <input style="padding-right: 68px" type="text" placeholder="last name" maxlength="10" name="lname" value="" required/> <br />
+
+      <label for="age">age</label>
+      <input type="number" placeholder="age" name="age" value="" min="0" /> <br />
+
+      <label for="password">Password</label>
+      <input type="password" style="padding-right: 77px" name="pass" value="" placeholder="password" required/> <br />
+
+      <label for="email">Email</label>
+      <input type="email" style="padding-right: 100px" name="email" value="" placeholder="email" required /><br /><br>
+
+      <label for="">Lytis:</label><br>
+      <input type="radio" name="gender" value="vyras">
+      <label for="">Vyras</label><br>
+      <input type="radio" name="gender" value="moteris">
+      <label for="">Moteris</label><br>
+      <input type="radio" name="gender" value="nenoriu nurodyt" checked>
+      <label for="">Nenoriu nurodyti</label><br> <br>
+
+
+      <label for="textas"></label>
+      <textarea name="text" rows="8" cols="80" placeholder="type some text"></textarea><br />
+
+      <input type="image" name="img" src="./main-pic.jpg" width="20%"  /> <br>
+
+      <select>
+        <optgroup label="Miestai">
+          <option value="">VIlnius</option>
+          <option value="">Panevezys</option>
+          <option value="">Kaunas</option>
+          <option value="">Klaipėda</option>
+
+        </optgroup>
+      </select>
+      <br><br>
+      <label id="date">Data</label>
+      <input type="date" />
+      <br>
+
+      <input type="submit" name="button_input" value="Registruotis" disabled>
+      <button type="submit" name="button">Registruotis</button>
+
+
+    </form>
+
+  </body>
+</html>
