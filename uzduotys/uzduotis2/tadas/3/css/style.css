@@ -18,6 +18,8 @@ h2 {
   position: absolute;
   top: 0px;/*  Veikia tik su position: ABSOLUTE */
   right: 0px;/*  Veikia tik su position: ABSOLUTE */
+
+  margin-top: 0;
 }
 
 article {
