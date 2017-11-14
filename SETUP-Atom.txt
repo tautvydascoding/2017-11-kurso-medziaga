@@ -5,6 +5,7 @@ linter
 linter-htmlhint
 linter-csslint ?
 linter-jshint 
+linter-sass-lint
 
  
 beautify
