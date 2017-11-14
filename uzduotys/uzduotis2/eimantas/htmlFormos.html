@@ -8,7 +8,7 @@
     <h1>HTML formos</h1>
     <form class="" action="index.html" method="get">
       <label for="username">Username: </label>
-      <input type="text" name="username" value="" placeholder="Irasykite savo varda">
+      <input type="text" name="username" value="" placeholder="Irasykite savo varda" autocomplete="on" autofocus>
       <br />
       <label for="amzius">Amzius: </label>
       <input type="number" name="age" value="" min="0" max="105" placeholder="Irasykite savo amziu">
@@ -22,6 +22,7 @@
       <label for="straipsnis">Article</label>
       <textarea name="straipsnis" rows="8" cols="80"></textarea>
 
+      <br />
       <!-- DROP DOWN -->
       <select>
         <optgroup label="Pasirinkimai">
@@ -34,16 +35,22 @@
           <option value="">b</option>
           <option value="">c</option>
         </optgroup>
-
-        <label for="#">Lytis</label>
-        <input type="radio" name="Male" value="Vyras">
-        <input type="radio" name="Female" value="Moteris">
-        <input type="radio" name="Other" value="Kita :D">
-
-
-
       </select>
 
+
+      <br />
+      <label for="">Lytis:</label>
+      <label for="">Vyras</label>
+      <input type="radio" name="Male" value="Vyras">
+
+      <label for="">Moteris</label>
+      <input type="radio" name="Female" value="Moteris">
+
+      <label for="">Kita</label>
+      <input type="radio" name="Other" value="Kita :D">
+
+
+      <br />
       <input type="submit" name="reg" value="registruotis" disabled>
       <button type="submit" name="reg">registruotis</button>
     </form>
