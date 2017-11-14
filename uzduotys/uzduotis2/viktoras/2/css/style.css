@@ -9,3 +9,12 @@
 .spec3:hover {
   background-color: #d67e52;
 }
+
+h3.spec2 {
+  background-color: #5c3b23;
+}
+
+
+h3 .spec2 {
+  background-color:#d23600;
+}
