@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+}
+h1 {
+  color: blue;
+  text-align: center;
+}
+article {
+  background-color: #a1a1a1;
+  border: solid 1px #000;
+  width: 30%;
+  float: left;
+  margin-left: 2.5%;
+  position: relative; /* būtina, jei vaikas naudoja position:absolute */
+}
+h2 {
+  position: absolute;
+  top: 0px; /* veikia tik su position:absolute */
+  left: 0px; /* veikia tik su position:absolute */
+  margin: 0px;
+  padding: 0px 30px;
+  background-color: red;
+}
+p {
+  padding-top: 60px;
+}
