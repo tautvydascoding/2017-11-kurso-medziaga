@@ -1,3 +1,5 @@
+/* */
+
 * {
     /*  bemelius iskaiciujam i ploti   */
     box-sizing: border-box;
@@ -22,6 +24,10 @@ article {
 h2 {
     background-color: red;
     padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
     margin-top: 0px;
     /* skraidantins elementas -rukas */
     /* absolute reik: top/left/bottom ir  "reletive" uzdeti ant tevo*/
@@ -30,7 +36,7 @@ h2 {
     right: 0px;  /* !!! veikia tik su position: absolute; */
 }
 p {
-    padding-top: 60px;
+    padding: 20px 10px 0px;
 }
 body {
     margin: 0;
@@ -39,8 +45,51 @@ body {
         <div class="no-float"> </div>
 */
 .no-float {
-    clear: both; 
+    clear: both;
 }
+.pirma-preke {
+    background-color: #eda4f9;
+}
+.antra-preke {
+    background-color: #c4e2c2;
+}
+.trecia-preke {
+    background-color: rgb(58, 174, 240);
+}
+
+.red-background {
+    background-color: red;
+}
+.brown-background {
+    background-color: brown;
+}
+
+/* for Tablet-small laptop  nuo 768 iki 991px  */
+@media (min-width: 768px) and (max-width: 991px) {
+  /*codas ...*/
+}
+/* for Tablet  nuo 0-768 */
+@media (max-width: 768px) {
+    article {
+        width: 46.25%;
+    }
+    .last-product {
+        width: 95%;
+        margin-top: 20px;
+    }
+}
+
+/* for Mobile   nuo 0 iki 425 */
+@media (max-width: 425px) {
+    article.last-product,
+    article {
+        width: 90%;
+        margin-top: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
 
 
 /**/
