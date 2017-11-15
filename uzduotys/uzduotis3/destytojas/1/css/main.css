@@ -5,6 +5,9 @@
     clear: both;
     content: '';
 }
+.float-l {
+    float: left;
+}
 /* -----------end basic---------- */
 
 h1 {
@@ -26,6 +29,7 @@ header {
     border: solid 1px red;
     height: 80px;
     display: block;
+    margin-bottom: 20px;
 }
 nav {
     padding-top: 32px;
@@ -69,11 +73,31 @@ li {
  }
  /*---------end header--------------*/
 /*----------main - content- wrapper---------*/
+section {
+    background-color: #fff;
+    width: 70%;
+}
+main {
+    overflow: hidden;
+}
+aside {
+    background-color: #FF80FF;
+    width: 28%;
+    margin-left: 2%;
 
+    /* automatinis aukscio isskaiciavimas
+    + reik tevui uzdeti: overflow: hidden; */
+    padding-bottom: 9999px;
+    margin-bottom: -9999px;
+}
 
 /*--------end main--------------*/
-/*-----------basic----------------*/
+/*-----------footer----------------*/
+footer {
+    background-color: #fff;
+    height: 80px;
+    margin-top: 20px;
+}
 
 
-
-/**/
+/*---------end footer ------------*/
