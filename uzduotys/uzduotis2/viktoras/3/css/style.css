@@ -21,7 +21,8 @@ article {
   width: 30%;
   float: left;
   margin-left: 2.5%;
-  /* jei nori, kad turinys butu vienoj eilutej,reikia nurodyti ploti*/
+  /* jei nori, kad turinys butu vienoj eilutej,reikia nurodyti ploti
+  daro float komanda. float reikia isplaukti, paleidi elementus plaukti*/
   position: relative;
 
 
@@ -45,4 +46,8 @@ p {
   /*margin - atstumimas is isores (gali tureti ir minusine reiksme)*/
   padding-top: 60px;
 
+}
+/*float isjungimas. naudojimas: html'e reikia susikurti div'a su tokia klase*/
+.no-float {
+  clear: both;
 }
