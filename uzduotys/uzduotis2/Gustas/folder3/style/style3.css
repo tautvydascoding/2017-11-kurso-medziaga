@@ -17,8 +17,8 @@ article {
   background-color: #a1a1a1;
   border: solid 1px #000;
   position: relative;
-
   width: 30%;
+  /*nepamirsk nuimti float*/
   float: left;
   margin-left: 2.5%;
 
@@ -57,4 +57,9 @@ h2.spec2{
 
 h2.spec3{
   background-color: rgb(240, 194, 76);
+}
+
+/*remove float*/
+.no-float{
+clear: both;
 }

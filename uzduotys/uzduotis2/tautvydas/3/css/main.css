@@ -13,7 +13,9 @@ article {
     position: relative;
     margin-left: 2.5%;
 
-    /* turinys vienoje eilute */
+    /* turinys vienoje eilute
+    !!! nepamirsti uzdeti clear:both po paskutintu elementu
+    */
     width: 30%;
     float: left;
 }
@@ -33,7 +35,12 @@ p {
 body {
     margin: 0;
 }
-
+/* flaot isjungimas
+        <div class="no-float"> </div>
+*/
+.no-float {
+    clear: both; 
+}
 
 
 /**/
