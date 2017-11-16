@@ -88,3 +88,7 @@ p {
 
   }
 }
+/*float isjungimas. naudojimas: html'e reikia susikurti div'a su tokia klase*/
+.no-float {
+  clear: both;
+}
