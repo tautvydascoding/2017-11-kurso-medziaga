@@ -1,0 +1,54 @@
+h2 {
+    color: red;
+}
+
+.blokas {
+    width: 33%;
+    height: 30vh;  /* 30% tevo */
+    background-color: #a1a1a1;
+    border: solid 1px #000;
+    display: block;
+}
+.blokas-3 {
+    /* lemento centravimas teve */
+    /* ! blokas-3 turi tureti ploti  */
+    margin-left: auto;
+    margin-right: auto;
+}
+.float-l {
+    float: left;
+}
+.float-r {
+    float: right;
+}
+.clearfix {
+    clear: both;
+}
+/* -----for Tablet--------*/
+/* -------nuo 0 iki 768px--*/
+@media (max-width: 768px ) {
+    .blokas-2,
+    .blokas-5 {
+        display: none;
+    }
+    .blokas-4 {
+        float: right;
+    }
+}
+/* ------for Mobile--------*/
+/* -----nuo 0 iki 425px----*/
+@media (max-width: 425px) {
+    .blokas {
+        float: none;
+        /* centruojame */
+        /* !plotis reikalingas */
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+    .blokas-4 { display: none; }
+    .blokas-2 { display: block; }
+}
+
+
+/**/

@@ -91,3 +91,22 @@ aside {
     position: absolute;
     top: 0;
 }
+======================================================
+CSS Issue - Why 4 * 25% is NOT 100%
+=====================================
+/* pas teva panaikinsime tarpus ir teksta, o pas vaika vel uzdesime */
+
+ul {word-spacing: -1em;
+    font-size: 0;
+    line-height: 0;
+    letter-spacing: -1px;
+}
+
+li {display: inline-block;
+    font: normal 13px/1.3 "Trebuchet MS", Helvetica, sans-serif;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+}
+//===========end============
+
