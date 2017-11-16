@@ -30,6 +30,7 @@
 }
 
 /*----for tablet-----*/
+/*--nuo 0 iki 768px--- (todel darant mobile'ui nereikia slept 5 bloko)*/
 
 
 @media (max-width: 768px) {
@@ -40,4 +41,19 @@
   .blokas-4 {
     float: right;
   }
+}
+
+/*---fot mobile---*/
+
+@media (max-width: 425px) {
+    .blokas {
+        float: none;
+        /*visiems isjungiam float*/
+        /*margin (auto) visuomet reikalingas width, kitaip necentruos*/
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+    .blokas-2 {display: block;}
+    .blokas-4 {display: none;}
 }
