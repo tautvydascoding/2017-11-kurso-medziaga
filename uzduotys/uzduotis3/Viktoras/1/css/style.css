@@ -1,0 +1,152 @@
+
+/*---------------basic--------------------*/
+* {
+  box-sizing: border-box;
+}
+
+.clear-float {
+  clear: both;
+  content: '';
+
+}
+
+.float-l {
+  float: left;
+}
+
+/*---------------end basic--------------------*/
+
+/*------------------Header'io CSS--------------*/
+
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+
+
+html {
+  background-color: #A9A9A9;
+}
+
+
+
+body {
+  /*turinio centravimas X ASYJE
+  REIKIA BUTINAI NURODYTI PLOTI
+  TADA MARGIN LEFT: AUTO;
+  MARGIN-RIGHT: AUTO*/
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+ header {
+   background-color: #FF80FF;
+   border: solid 1px #fff;
+   height: 80px;
+   display: block;
+   margin-bottom: 20px;
+
+ }
+
+nav {
+  /*min-height: 80px;*/
+  float: left;
+  width: 60%;
+  padding-top: 32px;
+}
+
+#search {
+  /*background-color: brown;*/
+  float: left;
+  width: 40%;
+  padding-top: 28px;
+  padding-left: 20px;
+
+
+}
+
+ header li {
+   display: inline-block;
+   width: 24%;
+   text-align: center;
+   text-transform: uppercase;
+
+ }
+
+ /*resetinam browserio settingus*/
+
+ ul {
+   margin: 0;
+   padding: 0;
+ }
+
+
+ input {
+   width: 70%;
+   border: none;
+   height: 25px;
+
+ }
+
+ header button{
+   height: 25px;
+   width: 75px;
+   min-width: 60px;
+   border: none;
+   background-color: #000;
+   color: #fff;
+   margin-left: 10px;
+ }
+
+ /*-----------Header End------------------*/
+
+
+ /*---------------------------------------*/
+
+ section {
+
+   background-color: #fff;
+   width: 70%;
+   padding: 15px;
+
+ }
+/*-----------------------------------------*/
+ aside {
+   background-color: #FF80FF;
+   width: 28%;
+   margin-left: 2%;
+
+   /*automatinis aukscio isskaiciavimas aside'ui*/
+   padding-bottom: 5000px;
+   margin-bottom: -5000px;
+
+
+ }
+
+ aside ul {
+   padding-left: 40px;
+   list-style-type: none;
+ }
+
+ h1, h2 {
+     text-align: center;
+ }
+
+
+
+ main {
+/*sita komanda skirta jei vaikas didesnis uz teva, siuo atveju aside'as yra begalinis, taciau pasleptas, nes jo tevas (<main>) yra trumpesnis ir aside'a rodys tik tokio ilgio, koks yra tevas*/
+
+   overflow: hidden;
+ }
+
+
+/*-------------Footer CSS-----------------*/
+ footer {
+   background-color: #fff;
+   height: 80px;
+   margin-bottom: 20px;
+ }
+
+/*-------------End Footer-----------------*/

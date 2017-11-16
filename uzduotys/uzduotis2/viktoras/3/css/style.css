@@ -24,6 +24,7 @@ article {
   /* jei nori, kad turinys butu vienoj eilutej,reikia nurodyti ploti
   daro float komanda. float reikia isplaukti, paleidi elementus plaukti*/
   position: relative;
+  margin-top: 0px;
 
 
 }
@@ -35,19 +36,55 @@ h2 {
   position: absolute;
   top: 0px;
   right: 0px;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-top: 0px;
+  padding: 5px 30px;
   background-color: red;
+  margin-top: 0px;
 }
 
 p {
   /*pading - atstumimas is vidines puses*/
   /*margin - atstumimas is isores (gali tureti ir minusine reiksme)*/
-  padding-top: 60px;
+
+  padding: 20px 10px;
 
 }
 /*float isjungimas. naudojimas: html'e reikia susikurti div'a su tokia klase*/
 .no-float {
   clear: both;
+}
+
+
+.pirma-preke {
+  background-color: #c2ba6d;
+}
+
+.antra-preke {
+  background-color: #da6b2f;
+}
+
+.trecia-preke {
+  background-color: #4d6f95;
+}
+
+/*for tablet nuo 0-768*/
+
+@media (max-width: 768px) {
+  article {
+    width: 46.25%;
+  }
+  .last-product {
+    width: 95%;
+    margin-top: 20px;
+  }
+}
+
+/* for mobile nuo 0 iki 425px*/
+@media (max-width: 425px) {
+  article {
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+
+  }
 }
