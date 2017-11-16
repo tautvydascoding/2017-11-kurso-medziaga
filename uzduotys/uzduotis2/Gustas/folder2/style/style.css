@@ -1,7 +1,7 @@
 p{
   color:rgb(110, 94, 85);
   font-size: 30px;
-  font-weight: 100;
+  font-weight: 50;
   font-family: fantasy;
 }
 h1{
@@ -11,6 +11,16 @@ h1{
 h2{
   color:rgb(35, 34, 80);
 }
+h2.hover{
+  color:blue;
+}
 body{
   background: rgb(195, 195, 195);
+}
+
+h3 .spec2{
+  background-color: blue;
+}
+h3.spec2{
+  color:green;
 }
