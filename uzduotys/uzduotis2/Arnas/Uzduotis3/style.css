@@ -73,7 +73,7 @@ clear: both;
 content: '';
 }
 h2{
-  text-align: center;
+  text-align: left;
   font: "Times New Roman", Times, serif;
   font-style: italic;
   font-size: 20px;
@@ -95,6 +95,7 @@ aside{
   margin-right: 0;
   margin-bottom: -5000px;
   padding-bottom: 5000px;
+  padding-top: 15px;
 }
 ol{
   list-style: none;
