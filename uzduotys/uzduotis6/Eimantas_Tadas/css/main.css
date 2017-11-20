@@ -1,6 +1,9 @@
 body{
     background-color: rgb(208, 208, 208);
 }
+article h3{
+    text-align: center;
+}
 .test-border {
   border: solid 1px black;
 }
