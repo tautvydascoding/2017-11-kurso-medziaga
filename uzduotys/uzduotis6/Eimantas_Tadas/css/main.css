@@ -15,3 +15,11 @@ h1 {
 .aukstis-500 {
     height: 500px;
 }
+
+.logo-space-header{
+  /*display:inline-block;*/
+}
+
+.test-border {
+  border: solid 1px black;
+}
