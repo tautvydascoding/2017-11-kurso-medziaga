@@ -22,3 +22,24 @@ h1 {
 nav li {
   display: inline-block;
 }
+nav ul li img {
+  width: 30%;
+}
+.bgr {
+      background-image: url("../images/ad1.jpg");
+      height: 500px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+.mygtukas {
+  margin-top: 50%;
+}
+.absolute {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.relative {
+  position: relative;
+}
