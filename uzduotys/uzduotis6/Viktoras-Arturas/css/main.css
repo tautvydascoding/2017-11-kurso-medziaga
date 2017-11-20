@@ -13,7 +13,6 @@
 .au-20 {
     height: 20em;
 }
-<<<<<<< HEAD
 .au-5 {
     height: 5em;
 }
@@ -25,23 +24,21 @@ img.thumbnail {
     max-height: 100%;
     display: block;
     margin: 0 auto;
-    border: solid 1px red;
-=======
-
-.img-4em {
-    width: 4em;
+    padding-right: 0;
+    border: solid 0px red;
 }
-
-.img-vert-margins {
-    margin-top: 3em;
-
+reklama2 {
+  background:url(../images/reklama2bg.jpeg) no-repeat;
+  padding-top:20px;
+  background-size:cover;
 }
-
-.p-size {
-    width: 20em;
+.plotislogo {
+    width: 4.5em;
+    position: absolute;
+    bottom: 30%;
 }
-
-.links-size {
-    width: 50em;
->>>>>>> ca51833c3c6d18b89cd6d797cdc1de30f2a9329e
+a.font {
+    font-size: 26px;
+    text-decoration-style: dotted;
+    font-family: sans-serif;
 }
