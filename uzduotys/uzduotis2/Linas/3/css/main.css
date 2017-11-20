@@ -1,3 +1,6 @@
+/*pvz mano pagrindines spalvos red green*/
+
+
 * {
   /* remelius iskaiciuoja i ploti ,
   be sitos programos remelis uzima ploti*/
@@ -23,6 +26,9 @@ float: left;
 h2 {
   background-color: red;
   padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 1px;
+  padding-bottom: 0px;
   margin-top: 0;
 
 
@@ -38,7 +44,8 @@ position: absolute;
 }
 
 p {
-  padding-top: 60px;
+
+  padding: 20px 10px 0px;
 }
 
 body {
@@ -50,4 +57,52 @@ body {
 
 .no-float {
   clear: both;
+}
+
+.pirma-preke {
+  background-color: #f98ec4;
+}
+
+.antra-preke {
+  background-color: blue;
+}
+
+.trecia-preke {
+  background-color: green;
+}
+
+.brown-backround {
+  background-color: brown;
+}
+
+/* for Tablet-small laptop nuo 768 iki 991*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /*kodas.......*/
+}
+
+/*for tablet nuo 0 iki 768*/
+
+@media (max-width: 768px) {
+  article {
+    width: 46.25%;
+  }
+  .last-product {
+    width: 95%;
+    margin-top: 20px;
+  }
+}
+
+/*for mobile nuo 0 iki 425*/
+
+@media (max-width: 425px) {
+article.last-product,
+article {
+  width: 90%;
+  margin-top: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+
+}
+
 }

@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+.clear_float {
+  clear: both;
+  content: '';
+}
+.float-left {
+  float: left;
+}
+/*-----end Basic-------*/
+
+h1, h3 {
+  text-align: center;
+}
+html {
+  background-color: #A9A9A9;
+}
+body {
+  /*turinio centravimas X asyje*/
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*------Header-------*/
+header {
+  position: relative;
+  background-color: #FF80FF;
+
+  height: 100px;
+  display: block;
+  height: 80px;
+  margin-bottom: 20px;
+
+}
+nav {
+  /*dedame i bendra eilute su Search*/
+  float: left;
+  width: 60%;
+}
+
+ul {
+  padding-top: 30px;
+
+  margin: 0;
+}
+
+header li {
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#search {
+  padding-top: 28px;
+  padding-left: 20px;
+  float: left;
+  width: 40%;
+}
+input {
+  width: 70%;
+  height: 25px;
+  border: none;
+}
+header button {
+  border: none;
+  background-color: #000;
+  color: #FFF;
+  width: 20%;
+  padding: 4px 0;
+  min-width: 30px; /*reiketu uzdeti mygtukam*/
+  /*arba padding*/
+}
+/*----------end header-----*/
+
+/*------Main - Content - Wraper-----*/
+section {
+  width: 70%;
+  background-color: #fff;
+  padding: 15px;
+
+}
+main {
+  overflow: hidden;
+}
+aside ul {
+  padding-left: 40px;
+}
+aside {
+  background-color: #ff80ff;
+  width: 28%;
+  margin-left: 2%;
+
+/*automatinis aukscio isskaiciavimas
++ reikia tevui uzdeti overflow: hidden;*/
+padding-bottom: 5000px;
+margin-bottom: -5000px;
+}
+/*----------end Main------*/
+
+/*------------footer-------*/
+
+footer {
+  background-color: #fff;
+  height: 80%;
+  margin-top: 20px;
+}
+
+
+
+/*-------end Main------*/
+
+/*----------Basic---------*/
+
+/*----------------------*/
