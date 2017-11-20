@@ -1,0 +1,8 @@
+                true 1 "Taip"
+var istekejus =
+                false 0 NULL undefined ""
+
+return NULL - naudojamas dazniausiai kai reiksme neteisinga 
+--------------------------------------------------------------------------------
+                                FUNKCIJOS
+--------------------------------------------------------------------------------
