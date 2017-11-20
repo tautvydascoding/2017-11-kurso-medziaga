@@ -5,10 +5,16 @@
 .test-border {
   border: solid 1px black;
 }
-.imgSizeTemp{
-    height: 100px;
-    width: 100px;
+.galleryRowHeight{
+    height: 33.33vh;
 }
-.galleryItemHeight{
-    height: 25vh;
+.imgCentravimas img{
+    border: 1px solid yellow;
+}
+footer ul{
+    list-style: none;
+}
+footer ul li img{
+    height: 15px;
+    width: 15px;
 }
