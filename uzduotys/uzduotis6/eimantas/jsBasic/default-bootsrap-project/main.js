@@ -13,3 +13,11 @@ butas = 45;
 aukstuSkaicius = 5;
 namoSpalva = "kazkokia lempine";
 kambariuSkaicius = 3;
+
+console.log(namas, ",", butas, ",", aukstuSkaicius, ",", namoSpalva, ",", kambariuSkaicius);
+
+function spausdinamLabas(){
+    console.log("Labas");
+}
+
+spausdinamLabas();
