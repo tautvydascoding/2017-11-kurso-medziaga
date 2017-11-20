@@ -13,7 +13,7 @@
 .au-20 {
     height: 20em;
 }
-<<<<<<< HEAD
+
 .au-5 {
     height: 5em;
 }
@@ -26,10 +26,10 @@ img.thumbnail {
     display: block;
     margin: 0 auto;
     border: solid 1px red;
-=======
+}
 
-.img-4em {
-    width: 4em;
+.img-em {
+    width: 2.5em;
 }
 
 .img-vert-margins {
@@ -42,6 +42,23 @@ img.thumbnail {
 }
 
 .links-size {
-    width: 50em;
->>>>>>> ca51833c3c6d18b89cd6d797cdc1de30f2a9329e
+    width: 20em;
+    margin-right: 0;
+
+}
+
+.img-size-rekl {
+    background-image:("../Images/moteris.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.img-size-rekl2 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.no-padding {
+    padding: 0;
 }
