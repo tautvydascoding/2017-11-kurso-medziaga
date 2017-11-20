@@ -1,1 +1,11 @@
 
+.test-border {
+  border: solid 1px black;
+}
+.imgSizeTemp{
+    height: 100px;
+    width: 100px;
+}
+.galleryItemHeight{
+    height: 25vh;
+}
