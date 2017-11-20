@@ -23,6 +23,7 @@ article h3{
     width: 100%;
     opacity: 0.6;
     filter: grayscale();
+    border-radius: 15px;
 }
 .imgCentravimas img:hover{
     opacity: 1;
