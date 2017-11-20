@@ -1,7 +1,17 @@
-.logo-space-header{
-  /*display:inline-block;*/
-}
 
 .test-border {
   border: solid 1px black;
+}
+.galleryRowHeight{
+    height: 33.33vh;
+}
+.imgCentravimas img{
+    border: 1px solid yellow;
+}
+footer ul{
+    list-style: none;
+}
+footer ul li img{
+    height: 15px;
+    width: 15px;
 }
