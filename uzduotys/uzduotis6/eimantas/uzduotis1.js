@@ -52,3 +52,21 @@ console.log("=========================");
 printVardas();
 pajamos();
 textasNkartu();
+
+
+// 6 UZDUOTIS
+// parasyti funkcija kuri apskaicuoja vidurki is paduotu 5 menesiu pazymiu
+
+var skaiciuObj = {
+    var num1 = 0;
+
+};
+
+function pazimiuVidurkis(x1, x2, x3, x4, x5){
+    var vidurkis = (x1 + x2 + x3 + x4 + x4)/5;
+    console.log("vidurkis yra", vidurkis);
+}
+
+pazimiuVidurkis(5, 10, 8, 6, 8);
+
+// suskaiciuoti pazimiu vidurki: 5, 10, 8, 6, 8
