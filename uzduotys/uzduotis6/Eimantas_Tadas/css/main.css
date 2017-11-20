@@ -13,6 +13,12 @@ article h3{
 .imgCentravimas img{
     height: 100%;
     width: 100%;
+    opacity: 0.6;
+    filter: grayscale();
+}
+.imgCentravimas img:hover{
+    opacity: 1;
+    filter: none;
 }
 .grafa{
     width: 100%;
@@ -30,4 +36,11 @@ footer ul{
 footer ul li img{
     height: 15px;
     width: 15px;
+}
+footer ul li a:link{
+    opacity: 0.6;
+    text-decoration: none;
+}
+footer ul li a:hover{
+    opacity: 1;
 }
