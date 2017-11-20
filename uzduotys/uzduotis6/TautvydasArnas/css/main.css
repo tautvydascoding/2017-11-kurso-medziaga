@@ -1,3 +1,7 @@
+html,
+body {
+  box-sizing: border-box;
+}
 h1 {
     color: blue;
 }
@@ -15,6 +19,7 @@ h1 {
 .aukstis-500 {
     height: 500px;
 }
+<<<<<<< HEAD
 section img{
     width: 100px;
     height: 100px;
@@ -22,4 +27,8 @@ section img{
 footer img{
     width: 100px;
     height: 100px;
+=======
+nav li {
+  display: inline-block;
+>>>>>>> 4bed5d12f619649f05474345dddb7d3a94390432
 }
