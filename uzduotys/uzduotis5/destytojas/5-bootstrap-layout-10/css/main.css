@@ -1,0 +1,29 @@
+h1 {
+    color: blue;
+}
+
+
+.aukstis-100 {
+    height: 100px;
+}
+.aukstis-200 {
+    height: 200px;
+}
+.aukstis-300 {
+    height: 300px;
+}
+.aukstis-400 {
+    height: 400px;
+}
+.aukstis-500 {
+    height: 500px;
+}
+aside {
+    margin-bottom: -16px;
+}
+@media (max-width:566px) {
+ 
+    aside {
+        height: 100px;
+    }
+}
