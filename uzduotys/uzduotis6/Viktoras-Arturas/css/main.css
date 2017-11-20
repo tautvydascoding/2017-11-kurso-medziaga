@@ -2,16 +2,31 @@
     height: 10em;
 }
 
-<<<<<<< HEAD
 .au-30 {
     height: 30em;
 }
 
 .au-15 {
     height: 15em;
-=======
+}
 
 .au-20 {
     height: 20em;
->>>>>>> 610c19b05ac6058e390983afb5d7cd135b2de1e8
+}
+
+.img-4em {
+    width: 4em;
+}
+
+.img-vert-margins {
+    margin-top: 3em;
+
+}
+
+.p-size {
+    width: 20em;
+}
+
+.links-size {
+    width: 50em;
 }
