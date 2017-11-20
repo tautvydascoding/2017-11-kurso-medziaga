@@ -56,9 +56,10 @@ textasNkartu();
 
 // 6 UZDUOTIS
 // parasyti funkcija kuri apskaicuoja vidurki is paduotu 5 menesiu pazymiu
+var num1 = prompt("Pirmas pazimys");
 
 var skaiciuObj = {
-    var num1 = 0;
+
 
 };
 
