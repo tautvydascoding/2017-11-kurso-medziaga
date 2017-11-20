@@ -13,7 +13,6 @@
 .au-20 {
     height: 20em;
 }
-
 .au-5 {
     height: 5em;
 }
@@ -25,40 +24,21 @@ img.thumbnail {
     max-height: 100%;
     display: block;
     margin: 0 auto;
-    border: solid 1px red;
+    padding-right: 0;
+    border: solid 0px red;
 }
-
-.img-em {
-    width: 2.5em;
+reklama2 {
+  background:url(../images/reklama2bg.jpeg) no-repeat;
+  padding-top:20px;
+  background-size:cover;
 }
-
-.img-vert-margins {
-    margin-top: 3em;
-
+.plotislogo {
+    width: 4.5em;
+    position: absolute;
+    bottom: 30%;
 }
-
-.p-size {
-    width: 20em;
-}
-
-.links-size {
-    width: 20em;
-    margin-right: 0;
-
-}
-
-.img-size-rekl {
-    background-image:("../Images/moteris.jpg");
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.img-size-rekl2 {
-    width: 100%;
-    overflow: hidden;
-}
-
-.no-padding {
-    padding: 0;
+a.font {
+    font-size: 26px;
+    text-decoration-style: dotted;
+    font-family: sans-serif;
 }
