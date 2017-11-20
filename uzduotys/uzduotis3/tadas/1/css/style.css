@@ -1,0 +1,109 @@
+/*------------------ BASIC -----------------------*/
+* {
+  box-sizing: border-box;
+}
+.clear-float {
+  clear: both;
+  content: '';
+}
+.float-l {
+  float: left;
+}
+/*------------------ END BASIC -----------------------*/
+
+h1 {
+  color: brown;
+}
+
+body {
+  /* turinio centravimas x asyje */
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+html {
+  background-color: #a9a9a9;
+}
+
+/*------------------- HEADER -------------------*/
+header {
+  background-color: #FF80FF;
+  border solid 1px #000;
+  display: block;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+nav {
+  background-color: #ff80ff;
+  min-height: 80px;
+  /* Idedame i bendra eilute su search */
+  float: left;
+  width: 60%;
+  padding-top: 32px;
+}
+
+#search {
+  float: left;
+  width: 40%;
+  padding-top: 28px;
+  padding-left: 20px;
+}
+
+header ul {
+  padding: 0;
+  margin: 0;
+}
+
+header li {
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+input {
+  width: 70%;
+  height: 25px;
+  border: none;
+}
+
+header button {
+  border: none;
+  background-color: #333333;
+  color: #fff;
+  width: 18%;
+  min-width: 60px;
+  height: 25px;
+  /*padding: 5px;*/
+}
+/*------------------- END HEADER -------------------*/
+
+/*-------------------Main - content - wrapper ------ */
+main {
+  overflow: hidden;
+}
+
+section {
+  background-color: #fff;
+  width: 70%;
+}
+
+aside {
+  background-color: #ff80ff;
+  width: 28%;
+  margin-left: 2%;
+
+  /* automatinis aukscio isskaiciavimas + nest father uzdetas overflow: hidden  */
+  padding-bottom: 5000px;
+  margin-bottom: -5000px;
+}
+/*------------------- END MAIN -------------------*/
+
+/*------------------- FOOTER -------------------*/
+footer {
+  background-color: #fff;
+  height: 80px;
+}
+/*------------------- END FOOTER -------------------*/
