@@ -45,7 +45,7 @@ function test1(){
 function test2(){
     var i =  document.getElementById("Opa").value;
     if (i > 1){
-        console.log("iveskite nauja");
+        document.getElementById("sirdis").style.opacity = 1;
     }
     else if(i < 1)
     {document.getElementById("sirdis").style.opacity = i;
