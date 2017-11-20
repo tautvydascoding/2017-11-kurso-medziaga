@@ -3,22 +3,99 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title></title>
+        <title>Homepage</title>
         <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
         <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
         <!-- !!! mano CSS visada zemiau -->
         <link rel="stylesheet" href="./css/main.css">
 
     </head>
-    <body  >
+    <body>
+        <div class="container">
+          <div class="row bg-light">
+            <header class="col-md-12 pl-0 pr-0">
+              <nav class="navbar navbar-expand-sm bg-light navbar-light w-100 p-0">
 
-        <div class="container bg-info">
-            <h1>Testuojam Bootstrap</h1>
+                <div class="col-1 p-0 m-0 w-100 d-flex justify-content-end">
+                  <a class="navbar-brand p-0 m-0" href="#">
+                    <img src="./images/logo.png" width="auto" height="25" alt="logo">
+                  </a>
+                </div>
 
+                <div class="col w-100">
+
+                  <!-- Toggleris telefonams  -->
+                  <button class="navbar-toggler navbar-toggler-right mx-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-0 all-uppercase">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="col-md-3 w-100 p-0 d-flex justify-content-end">
+                  <img src="./images/header-side.jpg" alt="side picture" width="auto" height="100">
+                </div>
+
+              </nav>
+            </header>
+
+          </div>
+          <!-- row END  -->
+
+          <main class="row bg-light pt-5 pb-5">
+
+              <div class="col-md-4">
+                <div class="article">
+                  <h3>Article</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="article-middle">
+                  <h3>Article</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="article">
+                  <h3>Article</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+
+        </main>
+        </div>
+        <!-- container END  -->
+
+        <div class="container-fluid main-fullscreen-register d-flex p-0">
+          <button class="btn btn-primary" type="button" name="button">register</button>
         </div>
 
-
-
+        <footer class="container mt-5">
+            <div class="row d-flex justify-content-between">
+                <div class="col-4 aukstis">
+                    <ul>
+                        <li><a href="index.html">Home</a> </li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><img src="./images/logo.png" alt=""> Brand</li>
+                    </ul>
+                </div>
+                <div class="col-4 imgCentravimas">
+                    <img src="./images/logo.png" alt="">
+                </div>
+            </div>
+        </footer>
 
 
         <!--  !!! patartina failo apacioje   -->
