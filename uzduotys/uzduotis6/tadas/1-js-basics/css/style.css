@@ -1,0 +1,45 @@
+/*------------------ BASIC -----------------------*/
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+/*------------------ END BASIC -----------------------*/
+
+/*------------------ Shortcuts -----------------------*/
+w-100 {
+  width: 100%;
+}
+
+.all-uppercase {
+  text-transform: uppercase;
+}
+/*------------------ Shortcuts END -----------------------*/
+
+/*------------------ Background --------------------------*/
+/* Jeigu naudojamas bacground image, palengvins darba */
+.background-jpg {
+  background-image: url('../images/bg2.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  height: 100vh;
+  width: 100%;
+
+  opacity: 0.8;
+}
+/*------------------ Background END --------------------------*/
+
+/*-------------------------- Header -------------------------- */
+
+/*-------------------------- Header END ---------------------- */
+
+/*-------------------------- Main ---------------------------- */
+
+/*-------------------------- Main END ------------------------ */
