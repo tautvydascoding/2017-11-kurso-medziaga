@@ -1,8 +1,8 @@
-
+console.log ("Labas");
 // ==============patarimai==========
 // reiksme  - kintamasis
-// "reiksme" - tekstas/ reiksme/ value
-// reiksme() - f-jos paleidimas
+// "reiksme" - tekstas
+// reiksme() - f-ja
 // ==============patarimai==========
 // reiksme  - kintamasis
 // "reiksme" - tekstas
@@ -10,17 +10,28 @@
 
 // 1 uzduotis
 // sukurti 3 Globalius kintamuosius vardas , pavarde, klase
+var vardas = "vardux";
+var pavarde = "pavardux";
+var klase = "klase?";
 
 // 1B
 // atspausdinti visus kintamuosius
-var vardas = "Petras";
-var pavarde = "ismestas";
-var klase = 7;
- console.log("moksleivis: ", vardas,"pavarde: ", pavarde, "klase :");
+
+console.log(vardas, pavarde, klase);
 
 //2
 // parasyti f-ja printName()  printLName(), printClass()
 //
+
+function printName(){
+    console.log(vardas);
+}
+function printLName(){
+    console.log(pavarde);
+}
+function printClass(){
+    console.log(klase);
+}
 
 // 3
 // parasyti f-ja printNameLNameClass(x, y, z)
@@ -45,11 +56,9 @@ var klase = 7;
  // isvesti 50 kartu zodi "Azuolas" i konsole
 
  // 2.1
-<<<<<<< HEAD
  //
-=======
->>>>>>> ae8bb262897a90bf5869f1cbca58377e1fff7760
  // isvesti 50 kartu zodi "<h2> Azuolas</h2> " i <article> elementa su  INNERHTML pagalba
+
 
 // 2 A
 // sukurti f-ja printX(xx) i browser langa
