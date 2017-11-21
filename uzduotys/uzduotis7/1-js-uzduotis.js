@@ -1,8 +1,8 @@
 console.log ("Labas");
 // ==============patarimai==========
 // reiksme  - kintamasis
-// "reiksme" - tekstas
-// reiksme() - f-ja
+// "reiksme" - tekstas/ reiksme/ value
+// reiksme() - f-jos paleidimas
 // ==============patarimai==========
 // reiksme  - kintamasis
 // "reiksme" - tekstas
@@ -13,8 +13,6 @@ console.log ("Labas");
 
 // 1B
 // atspausdinti visus kintamuosius
-
-
 
 //2
 // parasyti f-ja printName()  printLName(), printClass()
@@ -43,9 +41,7 @@ console.log ("Labas");
  // isvesti 50 kartu zodi "Azuolas" i konsole
 
  // 2.1
- //
  // isvesti 50 kartu zodi "<h2> Azuolas</h2> " i <article> elementa su  INNERHTML pagalba
-
 
 // 2 A
 // sukurti f-ja printX(xx) i browser langa
