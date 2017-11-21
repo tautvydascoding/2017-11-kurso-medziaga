@@ -1,4 +1,4 @@
-console.log ("Labas");
+
 // ==============patarimai==========
 // reiksme  - kintamasis
 // "reiksme" - tekstas
@@ -12,35 +12,39 @@ console.log ("Labas");
 // sukurti 3 Globalius kintamuosius vardas , pavarde, klase
 // 1B
 // atspausdinti visus kintamuosius
+var vardas = "Petras";
+var pavarde = "ismestas";
+var klase = 7;
+ console.log("moksleivis: ", vardas,"pavarde: ", pavarde, "klase :");
 
-//2 
+//2
 // parasyti f-ja printName()  printLName(), printClass()
-// 
- 
+//
+
 // 3
 // parasyti f-ja printNameLNameClass(x, y, z)
-// 
+//
 
-// 4 
-// parasyti f-ja spausdintiPazymius(x, y, z)   
-// 
- // 4.1 
-//  atspausdinti 4 vaiku pazymius 
-// 
+// 4
+// parasyti f-ja spausdintiPazymius(x, y, z)
+//
+ // 4.1
+//  atspausdinti 4 vaiku pazymius
+//
 
 // 5
 // issokanciam lange paprasyti ivesti vartotoja savo amziu
-// 5.1 
+// 5.1
 // atspaudinti vartotojo amziu i konsole
 
 
 
 // ======FOR   LOOP=======
- // 1. 
+ // 1.
  // isvesti 50 kartu zodi "Azuolas" i konsole
- 
+
  // 2.1
- // 
+ //
  // isvesti 50 kartu zodi "<h2> Azuolas</h2> " i <article> elementa su  INNERHTML pagalba
 
 
@@ -55,7 +59,7 @@ console.log ("Labas");
 
 // 3
  // sukurti f-jas piestiEilute(x); spausdintiStulpeli(x);  i konsole
- 
+
 
 
 
