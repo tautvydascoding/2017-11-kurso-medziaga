@@ -1,8 +1,8 @@
 console.log ("Labas");
 // ==============patarimai==========
 // reiksme  - kintamasis
-// "reiksme" - tekstas/ reiksme/ value
-// reiksme() - f-jos paleidimas
+// "reiksme" - tekstas
+// reiksme() - f-ja
 // ==============patarimai==========
 // reiksme  - kintamasis
 // "reiksme" - tekstas
@@ -10,13 +10,28 @@ console.log ("Labas");
 
 // 1 uzduotis
 // sukurti 3 Globalius kintamuosius vardas , pavarde, klase
+var vardas = "vardux";
+var pavarde = "pavardux";
+var klase = "klase?";
 
 // 1B
 // atspausdinti visus kintamuosius
 
+console.log(vardas, pavarde, klase);
+
 //2
 // parasyti f-ja printName()  printLName(), printClass()
 //
+
+function printName(){
+    console.log(vardas);
+}
+function printLName(){
+    console.log(pavarde);
+}
+function printClass(){
+    console.log(klase);
+}
 
 // 3
 // parasyti f-ja printNameLNameClass(x, y, z)
