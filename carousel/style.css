@@ -1,0 +1,54 @@
+/*
+img{
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}*/
+
+body{
+	width: 1100px;
+
+}
+
+.css-carousel{
+	overflow: hidden;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+.css-carousel .css-img{
+	border-radius: 10px;
+	width: 50%;
+	max-width: 90%;
+	position: absolute;
+	opacity: 0;
+	-webkit-animation-name:css-animation-fade;
+	-webkit-animation-duration: 30s;
+	-webkit-animation-iteration-count: infinite;
+
+}
+
+.css-carousel .css-img:nth-child(2){
+	-webkit-animation-delay:5s;
+}
+.css-carousel .css-img:nth-child(3){
+	-webkit-animation-delay:10s;
+}
+.css-carousel .css-img:nth-child(4){
+	-webkit-animation-delay:15s;
+}
+.css-carousel .css-img:nth-child(5){
+	-webkit-animation-delay:20s;
+}
+.css-carousel .css-img:nth-child(6){
+	-webkit-animation-delay:25s;
+}
+
+
+@-webkit-keyframes css-animation-fade{
+	from {opacity: 0;}
+	5% {opacity: 1;}
+	15% {opacity: 1;}
+	20% {opacity: 0;}
+	to {opacity: 0;}
+}
