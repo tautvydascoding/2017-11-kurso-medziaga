@@ -16,6 +16,9 @@ console.log("alga po pakelimo", alga);
 
 // ================= if =================
 
+//trumpas if
+//(salyg) ? jei true : jei false
+
 // if(salyga){
 //     //darom taip
 // }else if(salyga){
@@ -23,6 +26,16 @@ console.log("alga po pakelimo", alga);
 // }else{
 //     //kai abu netinka
 // }
+
+// var s = true;
+
+// (s) ? console.log("teip") : console.log("nope");
+
+// var username;
+// // jei nera username tada printins guest
+// var welcome = "Hello " + (username || "guest");
+
+// ================= END if =================
 
 function apieAlga(){
     if (alga < 500){
