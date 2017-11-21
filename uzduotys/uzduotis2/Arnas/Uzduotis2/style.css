@@ -1,0 +1,57 @@
+/*pasalektinam viska, kad remeliai ieitu i ploti, n perkeltu i kita eilute*/
+*{
+box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+  color: black;
+}
+article {
+float: left;
+width: 30%;
+height: 100px;
+background-color: red;
+border: 1px solid #000;
+position: relative; /*reikia jei vaike nurodai "absolute" */
+margin-left: 2%;
+margin-bottom: 2%;
+}
+
+h2{
+position: absolute;
+top: 0px;
+right: 0px;
+margin: 0px;
+background-color: blue;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+}
+.no-flot{
+  /*nuima flota*/
+  clear: both;
+}
+/*For small Laptops and Tbalets_________________-*/
+/*@media (min-width: 768px){}*/
+/*For tablet_____________________*/
+@media (max-width: 768px){
+  article {
+    width: 46.25%;
+  }
+  .last{
+    width: 95%;
+  }
+}
+/*For phones*/
+@media (max-width: 425px){
+  article {
+    display: none;
+  }
+  .last{
+    display: block;
+    width: 90%;
+    margin: 5%;
+
+  }
+}

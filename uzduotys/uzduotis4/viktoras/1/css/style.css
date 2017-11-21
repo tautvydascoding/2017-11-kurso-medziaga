@@ -1,0 +1,59 @@
+.blokas {
+  width: 33%;
+  height: 33vh;
+  font-size: 25px;
+  text-align: center;
+  background-color: #fdff6a;
+  border: solid 1px #000;
+  display: block;
+}
+
+.float-l {
+  float: left;
+}
+
+
+.float-r {
+  float: right;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.blokas-3 {
+  /*elemento centravimas teve*/
+  /*! blokas-3 turi tureti ploti*/
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*----for tablet-----*/
+/*--nuo 0 iki 768px--- (todel darant mobile'ui nereikia slept 5 bloko)*/
+
+
+@media (max-width: 768px) {
+  .blokas-2,
+  .blokas-5 {
+    display: none;
+  }
+  .blokas-4 {
+    float: right;
+  }
+}
+
+/*---fot mobile---*/
+
+@media (max-width: 425px) {
+    .blokas {
+        float: none;
+        /*visiems isjungiam float*/
+        /*margin (auto) visuomet reikalingas width, kitaip necentruos*/
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+    .blokas-2 {display: block;}
+    .blokas-4 {display: none;}
+}

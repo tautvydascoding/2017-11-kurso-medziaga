@@ -1,0 +1,97 @@
+/* CSS tricks */
+/* Jeigu reikes dirbti su full screen images, sitas helpfull */
+body, html {
+  height: 100%;
+}
+
+* {
+  /* Remelius iskaiciuojam i ploti */
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+/* --------------------------------------------- */
+
+
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+h2 {
+  /* Absolute reikalingi top: ir left: ir taip pat ant tevu uzdeti position: reletive */
+  position: absolute;
+  top: 0px;/*  Veikia tik su position: ABSOLUTE */
+  right: 0px;/*  Veikia tik su position: ABSOLUTE */
+
+  margin-top: 0;
+
+  border: solid 1px black;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+h2.first-item {
+  background-color: #ff46f2;
+}
+
+h2.second-item {
+  background-color: red;
+  color: white;
+}
+
+h2.third-item {
+  background-color: yellow;
+}
+
+article {
+  position: relative;
+  background-color: #a1a1a1;
+  border: solid 1px black;
+  width: 30%;
+  float: left;
+  margin-left: 2.5%;
+}
+
+p {
+  padding: 20px 10px 0;
+}
+
+/* Naudojant float, būtina išjungti panaudojus. Kitaip elementai gali suvažiuot vienas į kitą */
+.clear-float {
+  clear: both;
+}
+
+/* for tablet-small laptop (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px){
+  /* Some code..*/
+}
+
+/* for Tablet */
+@media (max-width: 768px) {
+  article {
+    width: 46.25%;
+  }
+
+  .last-product {
+    width: 95%;
+    margin-top: 20px;
+  }
+}
+
+/* for Mobile */
+@media (max-width: 425px) {
+  .last-product {
+    width: 80%;
+    margin-top: 20px;
+  }
+  article {
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 10%;
+  }
+}

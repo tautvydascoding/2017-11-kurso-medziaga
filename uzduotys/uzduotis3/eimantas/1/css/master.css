@@ -1,0 +1,113 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: grey;
+  /* turinio centravimas x asi horizontalus */
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* uzdaro float */
+.no-float{
+  clear: both;
+  content: '';
+}
+header{
+  background-color: pink;
+  height: 80px;
+  display: block;
+}
+h1{
+  text-align: center;
+}
+h1, h2, h3{
+  font-family: Courier;
+  font-weight: 600;
+  font-style: italic;
+}
+.intro{
+  color: white;
+  text-shadow: 1px 1px 10px black;
+}
+h2{
+
+}
+nav{
+  width: 60%;
+  float: left;
+  height: 78px;
+}
+nav ul{
+  padding-top: 30px;
+}
+.search{
+  width: 40%;
+  float: left;
+  padding-top: 28px;
+  padding-left: 20px;
+}
+nav li{
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+input{
+  width: 80%;
+  height: 25px;
+  border: none;
+}
+
+header button{
+  border: none;
+  background-color: #000;
+  color: white;
+  padding: 5px 20px;
+}
+
+/* END HEADER */
+
+/* MAIN CONTENT */
+
+.container{
+  margin-top: 2%;
+  height: 60vh;
+}
+
+.article{
+  float: left;
+  width: 79%;
+  height: 60vh;
+  padding: 10px;
+  background-color: white;
+}
+.aside{
+  float: left;
+  width: 19%;
+  margin-left: 2%;
+  height: 60vh;
+  background-color: pink;
+}
+.aside ul {
+  padding-left: 15%;
+}
+
+
+/* END MAIN CONTENT */
+
+/* FOOTER */
+
+footer{
+  background-color: white;
+  margin-top: 2%;
+  padding: 30px 20px;
+}
+
+
+/* END FOOTER */

@@ -1,0 +1,22 @@
+ Goto-definition   - PHP f-ju atidarymui
+
+
+linter
+linter-htmlhint
+linter-csslint ?
+linter-jshint 
+linter-sass-lint
+
+ 
+beautify
+autoclose-html
+atom-autocomplete-php
+color-picker
+
+
+short-cuts:
+idea
+lorem
+ctrl + rodykles
+ctrl + d - dublicate row's
+ 

@@ -1,0 +1,108 @@
+/*pvz mano pagrindines spalvos red green*/
+
+
+* {
+  /* remelius iskaiciuoja i ploti ,
+  be sitos programos remelis uzima ploti*/
+  box-sizing: border-box;
+}
+/* -------------------   */
+h1 {
+  color: blue;
+  text-align: center;
+}
+article {
+  background-color: #a1a1a1;
+  border: solid 1px #000;
+  position: relative;
+  margin-left: 2.5%;
+
+/*turinys vienoj eilutej*/
+width: 30%;
+float: left;
+
+}
+
+h2 {
+  background-color: red;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 1px;
+  padding-bottom: 0px;
+  margin-top: 0;
+
+
+
+/*  skraidantys elementas -rukas  */
+/*  absolute reikia : top/left/botom nurodyt ir
+tevui uzdeti "relative"    */
+
+position: absolute;
+  top: 0px;  /* veikia tik su position: absolute; */
+  right: 0px; /* veikia tik su position: absolute; */
+
+}
+
+p {
+
+  padding: 20px 10px 0px;
+}
+
+body {
+    margin: 0;
+}
+
+/*float issijungimas
+ <div class="no-float"></div> */
+
+.no-float {
+  clear: both;
+}
+
+.pirma-preke {
+  background-color: #f98ec4;
+}
+
+.antra-preke {
+  background-color: blue;
+}
+
+.trecia-preke {
+  background-color: green;
+}
+
+.brown-backround {
+  background-color: brown;
+}
+
+/* for Tablet-small laptop nuo 768 iki 991*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /*kodas.......*/
+}
+
+/*for tablet nuo 0 iki 768*/
+
+@media (max-width: 768px) {
+  article {
+    width: 46.25%;
+  }
+  .last-product {
+    width: 95%;
+    margin-top: 20px;
+  }
+}
+
+/*for mobile nuo 0 iki 425*/
+
+@media (max-width: 425px) {
+article.last-product,
+article {
+  width: 90%;
+  margin-top: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+
+}
+
+}
