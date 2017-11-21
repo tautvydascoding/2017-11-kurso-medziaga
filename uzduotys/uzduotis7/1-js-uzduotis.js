@@ -41,9 +41,7 @@ console.log ("Labas");
  // isvesti 50 kartu zodi "Azuolas" i konsole
 
  // 2.1
- //
  // isvesti 50 kartu zodi "<h2> Azuolas</h2> " i <article> elementa su  INNERHTML pagalba
-
 
 // 2 A
 // sukurti f-ja printX(xx) i browser langa
