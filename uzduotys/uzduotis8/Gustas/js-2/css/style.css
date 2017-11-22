@@ -1,0 +1,19 @@
+h1 {
+    color: blue;
+}
+
+.bg-white{
+        background-color: #999;
+}
+
+.heigth-300{
+    height: 300px;
+}
+
+.heigth-100{
+    height: 100px;
+}
+
+.heigth-500{
+    height: 500px;
+}
