@@ -6,12 +6,7 @@ console.log(names.join());
 console.log("masyvo ilgis " + names.length );
 //....
 
-
-
 // uzduotis  Array
-
-
-
 // 1. i masyvo gala ideti elmenta “butelis vandens”
 // 2. i masyvo pradzia ideti elmenta “ziebtuvelis”
 // 3. istrinti 3 elmenta
