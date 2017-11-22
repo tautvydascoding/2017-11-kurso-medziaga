@@ -126,16 +126,16 @@ printXelementeY( "Viso gero", "h1" );
 // taikymas 3
 // paleisti f-ja printX 12 kartu ir atspausdinti <img ...
 
-var paveiksliukas = '<img src=""   width="200px" height="200px">';
+var paveiksliukas = ' <img src=""   width="200px" height="200px"> ';
 
 for (var i = 0;  i < 8; i++) {
     document.querySelector("article").innerHTML += paveiksliukas;
 }
 
 // 3
- // sukurti f-jas piestiEilute(x); spausdintiStulpeli(x);  i konsole
+// sukurti f-jas piestiEilute(x); spausdintiStulpeli(x);  i konsole
 
-
+ 
 
 
 

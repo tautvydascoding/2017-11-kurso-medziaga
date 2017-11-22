@@ -45,10 +45,6 @@ var klase = 7;
  // isvesti 50 kartu zodi "Azuolas" i konsole
 
  // 2.1
-<<<<<<< HEAD
- //
-=======
->>>>>>> ae8bb262897a90bf5869f1cbca58377e1fff7760
  // isvesti 50 kartu zodi "<h2> Azuolas</h2> " i <article> elementa su  INNERHTML pagalba
 
 // 2 A
