@@ -1,6 +1,6 @@
 // apsilimui
 // 1 kursime nauja masyva uzpildyta, atsitiktiniais skaiciais nuo 10 - 100
-// 2 uzdavinys: pakeisti atsitiktinius skaicius, kurie yra lyginiai i zodi "lyginis"
+// 2 uzdavinys: skaicius, kurie yra lyginiai pakeisti i zodi "lyginis"
 
 
 // rimta
