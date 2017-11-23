@@ -13,7 +13,7 @@ console.log( bag.toString());
 
 // uzduotis  Array
 // 1. i masyvo gala ideti elmenta “butelis vandens”
-bag
+
 // 2. i masyvo pradzia ideti elmenta “ziebtuvelis”
 
 // 3. istrinti 3 elmenta
@@ -26,8 +26,9 @@ bag
 // [1, 3, 1, 3, 9, 3, 1, 3, 1, 9, ....
 
 
+var ieskomiZmones = ()
 
-
+    
 
 
 //
