@@ -24,7 +24,7 @@ console.log(skaiciai.toString());
 
 
 
- 
+
 
 
 // ——————————— Object ————————————————
@@ -34,3 +34,7 @@ console.log(skaiciai.toString());
     //    A) paleisti cikla ir uzpildyti "workers" masyva darbuotoju duomenimis (amzius ir pagamintu detaliu skaicius - burtu keliu)
 //	HINT: // !!!!! var naudojame, kad RAM'e / atmintyje sukurtu nauja kintamaji
 // 3. sukurti f-ja, kuri i konsole atspausdiname masyva (pilna objektu)
+
+
+
+//
