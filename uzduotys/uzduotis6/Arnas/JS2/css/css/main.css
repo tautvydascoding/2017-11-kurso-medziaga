@@ -1,0 +1,28 @@
+h1{
+    color: #fff340FF;
+}
+img{
+    height: 300px;
+    width: 200px;
+}
+.positionR{
+    position: relative;
+
+}
+.pirmas, .antras, .trecias {
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: 50%;
+    height: 300px;
+    transform: translate(-50%, -0%)
+}
+.pirmas{
+    z-index: 3;
+}
+.antras{
+    z-index: 2;
+}
+.trecias{
+    z-index: 1;
+}
