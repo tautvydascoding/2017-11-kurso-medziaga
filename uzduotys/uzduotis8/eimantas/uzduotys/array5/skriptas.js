@@ -81,4 +81,63 @@ for (var i = 0; i < skaiciai2.length; i++) {
 
 
 // 4. surasti geriausia darbuotoja
+
+console.log("==================== Geriausias darbuotojas ========================");
+
+// reikia tikrinti kaip rikiuoja, galima klaida
+// skaiciai2.sort();
+// console.log(skaiciai2[skaiciai2.length -1]);
+
+// custom rikiavimas
+
+
+
+console.log("nerikiuotos: ", skaiciai2);
+
+//dublikuoja masyva kad nesugadinti
+// !!!! arr2 = arr - neveikia! kopijuoja i arr2 kelia iki arr.
+// reikia arr2 = arr.slice(0); - sukurs nauja masyva nuo tevo pradzios
+// !!!!!!!!!!!!!!!!!!!!!
+
+var nerikiuotos = skaiciai2.slice(0);
+for (var k = 0; k < skaiciai2.length; k++) {
+    x = skaiciai2[0]; // labai mazas skaicius is masyvo
+    for (var i = 1; i < skaiciai2.length; i++) {
+
+        // sukeicia vietomis masyvo elementus jei didesnis sekantis didesnis
+        if (x > skaiciai2[i]) {
+            skaiciai2[i-1] = skaiciai2[i];
+            skaiciai2[i] = x;
+        }else{
+            x = skaiciai2[i];
+        }
+    }
+}
+
+// reiketu visada patikrinti ar tikrai nuejo iki galo
+
+console.log("rikiuotos: ", skaiciai2);
+// detaliu skaicius kuri padare geriausias darbuotojas
+var gerKiek = skaiciai2[skaiciai2.length -1];
+
+
+// randa geriausio darbuotojo numeri
+//mas: array - kuriame ieskome
+// ieskomasSkaicius: reiksme kurios ieskosime masyve
+// return: integer, masyvo index - darbuotojo nr
+
+function findEmp(mas, ieskomasSkaicius){
+    for (var i = 0; i < mas.length; i++) {
+        if (mas[i] == ieskomasSkaicius){
+            return i;
+        }
+    }
+    return ieskomasSkaicius + " nerastas";
+}
+
+var bestWorker = findEmp(nerikiuotos, gerKiek);
+console.log("geriausio darbuotojo nr", bestWorker);
+
 // 5. surasti blogiausia darbuotoja
+
+console.log("==================== Blogiausias darbuotojas ========================");
