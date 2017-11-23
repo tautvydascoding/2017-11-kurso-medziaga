@@ -1,7 +1,7 @@
 console.log("labas");
 
 //sukurimo budai
-var imone = [];
+var imone = [x];
 
 // arba
 
@@ -74,6 +74,8 @@ console.log("imone.splice(2,1)", imone);
 var imonesInfo = imone.slice(0,2);
 console.log("imone: " + imone + "\n imonesInfo " + imonesInfo);
 console.log(imone);
+
+
 
 
 
