@@ -13,11 +13,16 @@ console.log( bag.toString());
 
 // uzduotis  Array
 // 1. i masyvo gala ideti elmenta “butelis vandens”
+<<<<<<< HEAD
+
+// 2. i masyvo pradzia ideti elmenta “ziebtuvelis”
+=======
 // bag[4] = "butelis vandens";
 bag.push("butelis vandens");
 // bag[bag.length] = "butelis vandens";
 // bag.splice(bag.length, 0, "butelis vandens");
 console.log("idejom vandeni", bag);
+>>>>>>> ddcb8edfbdb58b6ab74cfeee4ac9fdbb29d4ee74
 
 // 2. i masyvo pradzia ideti elmenta “ziebtuvelis”
 bag.unshift("ziebtuvelis");
@@ -46,8 +51,9 @@ console.log(masyvas);
 // [1, 3, 1, 3, 9, 3, 1, 3, 1, 9, ....
 
 
+var ieskomiZmones = ()
 
-
+    
 
 
 //

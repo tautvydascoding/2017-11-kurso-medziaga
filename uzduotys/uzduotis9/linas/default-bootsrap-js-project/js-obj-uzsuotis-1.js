@@ -5,6 +5,10 @@
 // 1) isvesti i console mokinio informacija.
 // 2) pasirasyti funkcija, kuri is duotu 5 pazymiu, grazintu ju vidurki
 
+var x= 0;
+
+x= Math.pow(2,8);
+
 
 
 
