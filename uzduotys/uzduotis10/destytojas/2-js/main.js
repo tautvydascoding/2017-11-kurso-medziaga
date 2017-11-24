@@ -19,12 +19,37 @@ document.querySelector('article').innerHTML += "....";
 
 // 1 uzduotis
 // isvesti visus duomenis apie zmogu vienoje eilute
+for (var i = 0; i < data.length; i++) {
+    console.log(  data[i].toString() );
+}
 
 // 2 Uzduotis
 // isvesti visus duomenis stulpeliu
+for (var i = 0; i < data.length; i++) {
+     console.log(data[i][0]);
+     console.log(data[i][1]);
+     console.log(data[i][2]);
+}
+for (var i = 0; i < data.length; i++) {
+     for (var t = 0; t < data[i].length; t++) {
+         console.log( data[i][t] );
+         // t++               i   t
+         // console.log( data[0][0] );
+         // console.log( data[0][1] );
+         // console.log( data[0][2] );
+
+         // console.log( data[1][0] );
+         // console.log( data[1][1] );
+         // console.log( data[1][2] );
+     }
+     // i++
+}
+
+
 
 // 3 uzduotis
 // pakeisti "Olgos " pavarde i "Jarukuotiete"
+// 
 
 // 4 Uzduotis
 // automatiskai patikrinti visus duomenis ir visus gimusius nuo 1980 iki 2000 isvesti
