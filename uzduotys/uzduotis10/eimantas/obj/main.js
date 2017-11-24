@@ -12,6 +12,7 @@ for( x in person){
     console.log(x);
 }
 
+
 console.log("-------------------------");
 
 kazkoksArray = [8, 5, 6, 20, 2, 3];
