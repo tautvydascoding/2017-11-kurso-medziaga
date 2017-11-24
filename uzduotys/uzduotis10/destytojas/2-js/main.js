@@ -87,7 +87,7 @@ var matrix = [];
 // eilutes
 for (var i = 0; i < 10; i++) {
     // stulpeliai
-    matrix[i] = [];  
+    matrix[i] = [];
     for (var t = 0; t < 10; t++) {
         matrix[i][t] = Math.floor( (Math.random() * 40)) + 10;
     }
