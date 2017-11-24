@@ -30,7 +30,9 @@ for (var i = 0; i < data.length; i++) {
      console.log(data[i][1]);
      console.log(data[i][2]);
 }
+// einam per matricos eilutes
 for (var i = 0; i < data.length; i++) {
+    // einam per matricos stulpelius
      for (var t = 0; t < data[i].length; t++) {
          console.log( data[i][t] );
          // t++               i   t
@@ -49,14 +51,48 @@ for (var i = 0; i < data.length; i++) {
 
 // 3 uzduotis
 // pakeisti "Olgos " pavarde i "Jarukuotiete"
-// 
+ data[2][1] = "Jarukuotiete";
+console.log(data);
 
 // 4 Uzduotis
 // automatiskai patikrinti visus duomenis ir visus gimusius nuo 1980 iki 2000 isvesti
 
+// einam per matricos eilutes
+for (var i = 0; i < data.length; i++) {
+    // einam per matricos stulpelis
+    for (var t = 0; t < data[i].length; t++) {
+        var duomenys = data[i][t];
+        if ( Number.isInteger(duomenys) &&  duomenys > 1980 &&  duomenys < 2000) {
+            console.log("Laba, " +  data[i][0] + " Gali but kad sergate, prasome atvykti pasitikrinti");
+        }
+    }
+}
 
+// arba
+for (var i = 0; i < data.length; i++) {
+    var gimimoData = data[i][2];
+    if ( Number.isInteger(gimimoData) &&  (gimimoData > 1980) &&  (gimimoData < 2000)) {
+        console.log("Laba, " +  data[i][0] + " Gali but kad sergate, prasome atvykti pasitikrinti");
+    }
+}
 
+// 5 uzduotis
+// sukurti matrica 10x10 dydzio, uzpildyta atsistiktiniais skaiciais nuo 10 iki 50
 
+var matrix1 = ["aa", "bbb", "ccc"];
+var matrix2 = matrix;  // !!! negalima
+
+var matrix = [];
+
+// eilutes
+for (var i = 0; i < 10; i++) {
+    // stulpeliai
+    matrix[i] = [];  
+    for (var t = 0; t < 10; t++) {
+        matrix[i][t] = Math.floor( (Math.random() * 40)) + 10;
+    }
+}
+console.log(matrix);
 
 
 
