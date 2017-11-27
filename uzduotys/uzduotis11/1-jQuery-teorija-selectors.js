@@ -17,6 +17,18 @@ var myCSS = {
     color: "red"
 };
 $( "article > p" ).css( myCSS );
+
+// advance: get curent width and height
+//$( p ).css({
+// 	  width: function( index, value ) {
+// 		console.log("curent width:" + value);  
+// 		return parseFloat( value ) * 1.2;
+// 	  },
+// 	  height: function( index, value ) {
+// 		console.log("curent height: " + value);
+// 		return parseFloat( value ) * 1.2;
+//   }
+// });
 //=============selectors kaip CSS=========
 
 // keliu elementu select'as (select h1 and h2 elements)
