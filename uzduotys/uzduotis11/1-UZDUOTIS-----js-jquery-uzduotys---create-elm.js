@@ -26,3 +26,10 @@ console.log("Labas");
 
 // 1.7
 //  ideti 1.6 <article> elementa (kuris laiko savyne <h2> ir <p>)  i <main> elementa
+
+// 1.8
+// perkelti LOGO i kita vieta naudojant js
+
+// ---------------------------------
+// 1.9 daugiau uzduotiu su perkelimu elementu append, prepend, after, before, appendTo
+// ---------------------------------
