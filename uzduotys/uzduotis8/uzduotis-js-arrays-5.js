@@ -6,8 +6,20 @@ var max = 100;
 // 1 kursime nauja masyva uzpildyta, atsitiktiniais skaiciais nuo 10 - 100
 // 2 uzdavinys:  skaicius, kurie yra lyginiai i pakeisti i zodi "lyginis"
 
+<<<<<<< HEAD
+
+
+
+
+
+
+
+
+=======
+>>>>>>> a9e70fe74c58fa08e003127275a2019c49c110ae
 // rimta
-// 1 kursime nauja masyva uzpildyta atsitiktiniais skaiciais nuo 50 - 200 (pagamintomis datalemis per diena)
+// 1 kursime nauja masyva uzpildyta, atsitiktiniais skaiciais nuo 50 - 200 (pagamintomis datalemis per diena)
+
 // 2 burtu keliu 10 % tikimybe paversti minus reiksememis ( padauginti is  -1)
 // 3. uzdavinys: visus skaicius paversti teigiamas (is masyvo parts)
 // 4. surasti geriausia darbuotoja

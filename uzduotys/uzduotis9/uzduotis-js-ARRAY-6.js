@@ -36,5 +36,4 @@ console.log(skaiciai.toString());
 // 3. sukurti f-ja, kuri i konsole atspausdiname masyva (pilna objektu)
 
 
-
-//
+ 

@@ -6,6 +6,8 @@
 // 2) pasirasyti funkcija, kuri is duotu 5 pazymiu, grazintu ju vidurki
 
 
+
+
 // uzduotis: sukurti 2 objektus:
 // 1) tevas : vardas, pavarde, vaikas
 // 2) vaikas: klase, vardas

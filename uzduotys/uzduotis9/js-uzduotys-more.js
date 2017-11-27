@@ -3,6 +3,7 @@
 // sukurti f-ja getData(masyvas, x), kuri grazina is masyvo "masyvas" "x" stalciaus duomenis
 
 
+
 //  sukurti f-ja rikiuojaDid(masyvas), kuri grazina surikiuota masyva
 //  sukurti f-ja rikiuojaMaz(masyvas), kuri grazina surikiuota masyva
 
