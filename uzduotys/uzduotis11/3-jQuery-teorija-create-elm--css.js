@@ -1,5 +1,5 @@
 
-//===============create element=========
+//===============create element==================
 var elementas0 = "<p> <button>Register</button> </p>";
 var elementas1 = "<p>" +
     "<button>Register</button>" +
@@ -16,13 +16,13 @@ var elementas2 = document.createElement("p");
 elementas2.innerHTML = "<button>Register</button>";
 //=====================================
 // more complex
-//$("<footer></footer>", {
-//    "class": "test",
-//    text: "Click me!",
-//    click: function() {
-//        $( this ).hide( );
-//    }
-//}).appendTo( "body" );
+$("<footer></footer>", {
+   "class": "test",
+   text: "Click me!",
+   click: function() {
+       $( this ).hide( );
+   }
+}).appendTo( "body" );
 
 //=============delete===========
 $("#div1").remove();  //  removes the selected element(s) and its child elements.

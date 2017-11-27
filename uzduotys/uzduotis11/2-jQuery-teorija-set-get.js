@@ -56,7 +56,6 @@ var elementasH1 =   $("h1"),
 
 // ========tricks=====================
 // perkels (nekopijuos)  elementa i kita  vieta
-//$( "body" ).append( $( "h1" ) );
+// $( "body" ).append( $( "h1" ) );
 
 // Important: If there is more than one target element, however, cloned copies of the inserted element will be created for each target except for the last one.
-
