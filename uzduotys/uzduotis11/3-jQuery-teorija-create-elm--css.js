@@ -32,18 +32,6 @@ $("p").remove(".test");         //removes all <p> elements with class="test":
 $("p").remove(".test, .demo"); // removes elements with class="test" and class="demo":
 
 
-//=============css===============
-
-$( "article > p" ).css( "border", "1px solid gray" );
-
-// arba
-
-var myCSS = {
-    border: "1px solid gray",
-    color: "red"
-};
-$( "article > p" ).css( myCSS );
-
 
 
 //============= add Class ===============
@@ -53,7 +41,7 @@ $( "article > p" ).css( myCSS );
 // d.className += " otherclass";
 // d.classList.add("otherclass");
 // d.classList.remove("otherclass");
-// ~~ d.classList.toggle('otherclass');
+// d.classList.toggle('otherclass');
 
 // jQuery
 
