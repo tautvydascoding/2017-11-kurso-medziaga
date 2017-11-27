@@ -1,5 +1,5 @@
 
-//===============create element=========
+//===============create element==================
 var elementas0 = "<p> <button>Register</button> </p>";
 var elementas1 = "<p>" +
     "<button>Register</button>" +
@@ -16,13 +16,13 @@ var elementas2 = document.createElement("p");
 elementas2.innerHTML = "<button>Register</button>";
 //=====================================
 // more complex
-//$("<footer></footer>", {
-//    "class": "test",
-//    text: "Click me!",
-//    click: function() {
-//        $( this ).hide( );
-//    }
-//}).appendTo( "body" );
+$("<footer></footer>", {
+   "class": "test",
+   text: "Click me!",
+   click: function() {
+       $( this ).hide( );
+   }
+}).appendTo( "body" );
 
 //=============delete===========
 $("#div1").remove();  //  removes the selected element(s) and its child elements.
@@ -64,24 +64,24 @@ $("p").remove(".test, .demo"); // removes elements with class="test" and class="
 
 
 //Given an unordered list with two <li> elements, this example adds the class "item-0" to the first <li> and "item-1" to the second.
-//$( "ul li" ).addClass(function( index ) {
+// $( "ul li" ).addClass(function( index ) {
 //    return "item-" + index;
-//});
+// });
 
 
-//$("h1").addClass( function( index, currentClass ) {
+// $("h1").addClass( function( index, currentClass ) {
 //    return index + currentClass;
-//});
+// });
 //add the "green" class to a div that already has a "red" class
-//$( "div" ).addClass(function( index, currentClass ) {
-//    var addedClass;
-//
-//    if ( currentClass === "red" ) {
-//        addedClass = "green";
-//        $( "p" ).text( "There is one green div" );
-//    }
-//    return addedClass;
-//});
+$( "div" ).addClass(function( index, currentClass ) {
+   var addedClass;
+
+   if ( currentClass === "red" ) {
+       addedClass = "green";
+       $( "p" ).text( "There is one green div" ); 
+   }
+   return addedClass;
+});
 
 //=================has Class==============
 if ( document.getElementById("MyElement").classList.contains('MyClass') ) {}
