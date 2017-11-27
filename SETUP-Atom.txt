@@ -20,3 +20,7 @@ lorem
 ctrl + rodykles
 ctrl + d - dublicate row's
  
+
+
+jQuery-snippets
+jquery

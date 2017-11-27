@@ -7,18 +7,26 @@ $(function() {
 jQuery(function( $ ) {
     // Your code using failsafe $ alias here...
 });
+//=============css=============== 
+$( "article > p" ).css( "border", "1px solid gray" );
 
-//=============selectors=========
+// arba
 
+var myCSS = {
+    border: "1px solid gray",
+    color: "red"
+};
+$( "article > p" ).css( myCSS );
+//=============selectors kaip CSS=========
 
 // keliu elementu select'as (select h1 and h2 elements)
-//$( "h1, h2" ).css( "background", "black" );
-//$( "h1" ).add( "h2" ).css( "background", "yellow" );
+// $( "h1, h2" ).css( "background", "black" );
+// $( "h1" ).css().add( "h2" ).css( "background", "yellow" );
 
 // paveiks paskutini is li elementu
-//$( "li" ).last().css( "background", "yellow" );
-//$( "li:last" ).addClass( "selected highlight" );
-// $( "p:even" )
+$( "li" ).last().css( "background", "yellow" );
+// $( "li:last" ).addClass( "selected highlight" );
+$( "p:even" )
 //$( "p:eq(1)" ); // pirmas
 
 //$( "h1", "form" ).addClass( "bar" );
@@ -42,5 +50,3 @@ jQuery(function( $ ) {
 //$("h2").next().css({"color": "red", "border": "2px solid red"});
 // $("h2").nextAll();
 //$("h2").nextUntil("h6");
-
-
