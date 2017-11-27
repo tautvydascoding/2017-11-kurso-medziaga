@@ -27,7 +27,7 @@ console.log(names);
 // 3 uzduotis
 // sukurti matrica vardas, pavarde, skaicius. Matricos dydis 3x10
 
- var matrica = []; 
+ var matrica = [];
 for (var i = 0; i < 10; i++) {
     var rand = Math.floor(Math.random() * names.length ) ;
     var rand2 = Math.floor(Math.random() * names.length ) ;
@@ -38,6 +38,8 @@ for (var i = 0; i < 10; i++) {
 }
 console.log(matrica);
 
+
+console.log(matrica[4][0], matrica[4][1], matrica[4][2]);
 
 
 
