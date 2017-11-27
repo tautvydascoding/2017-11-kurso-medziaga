@@ -12,8 +12,8 @@ jQuery(function( $ ) {
 
 
 // keliu elementu select'as (select h1 and h2 elements)
-//$( "h1, h2" ).css( "background", "black" );
-//$( "h1" ).add( "h2" ).css( "background", "yellow" );
+// $( "h1, h2" ).css( "background", "black" );
+$( "h1" ).css().add( "h2" ).css( "background", "yellow" );
 
 // paveiks paskutini is li elementu
 //$( "li" ).last().css( "background", "yellow" );
@@ -42,5 +42,3 @@ jQuery(function( $ ) {
 //$("h2").next().css({"color": "red", "border": "2px solid red"});
 // $("h2").nextAll();
 //$("h2").nextUntil("h6");
-
-
