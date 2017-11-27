@@ -108,4 +108,21 @@ console.log(" d / r = ", z);
 
 
 
+
+//================local = global=========
+var x = "x global";
+function testLocalVar() {
+	
+	var y = "y local";
+	z = "z global";
+	console.log("x", x);
+	console.log("y", y);
+	console.log("z", z);
+	
+}
+testLocalVar();
+console.log("x", x);
+console.log("z", z);
+console.log("y", y);  // error
+
 //
