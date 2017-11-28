@@ -5,13 +5,22 @@
 //.html()
 //.val()
 
-var otext = $("h1").text();
+var otext = $("h1").text();  // return visu h1 turini
 //console.log("h1 otext: " + otext);
 
 var oHTML = $("h1").html();
 //console.log("h1 oHTML: " + oHTML);
 
-var o = "";
+//---- get only first h1 text------
+var elm = $("h1").eq(0);   // eq -  return the jquery selector 
+var elm2 = $("h1")[0];     // [0] - return the DOM element
+console.log("eq(): " ,  elm) ;
+console.log("[0]: " ,  elm2) ;
+
+console.log( elm.text());         // WORKS !!!	
+// console.log( elm2[0].text();    // ERROR: [0] return the DOM element
+// NOTE: $(...)[0] will return the DOM element. If you want to use a jquery function, it has to be on a jquery selector object. If you want to get the jquery selector for a specific index, use the eq function:
+// NOTE:  eq( -2 ) - nuo galo
 
 
 
@@ -40,6 +49,7 @@ var o = "";
 // prepend() - Inserts content at the beginning of the selected elements (viduje, pradzioje)
 // after() - Inserts content after the selected elements (isoreje, po elemento)
 // before() - Inserts content before the selected elements (isoreja, pries elementa)
+// insertBefore();    // The .before() and .insertBefore() methods perform the same task. 
 // appendTo() - i kur perkelti si elementa
 
 var elementasH1 =   $("h1"),
