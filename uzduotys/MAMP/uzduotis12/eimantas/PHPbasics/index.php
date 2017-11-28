@@ -12,6 +12,13 @@
     </head>
     <body>
 
+        <h1>hi</h1>
+
+        <?php
+            $name = "tomas"
+
+
+          ?>
 
 
 
