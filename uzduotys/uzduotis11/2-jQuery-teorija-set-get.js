@@ -49,6 +49,7 @@ console.log( elm.text());         // WORKS !!!
 // prepend() - Inserts content at the beginning of the selected elements (viduje, pradzioje)
 // after() - Inserts content after the selected elements (isoreje, po elemento)
 // before() - Inserts content before the selected elements (isoreja, pries elementa)
+// insertBefore();    // The .before() and .insertBefore() methods perform the same task. 
 // appendTo() - i kur perkelti si elementa
 
 var elementasH1 =   $("h1"),
