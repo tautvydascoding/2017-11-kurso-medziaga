@@ -15,8 +15,19 @@
         <h1>hi</h1>
 
         <?php
-            $name = "tomas"
+            // issaugo kintamuosius
+            $name = "vardas";
+            $age = 9;
+            
+            // constantai
+            define("DB_NAME", 'riklys');
+            define("DB_PASS", 'xxx.aa');
+            define("HOST", 'localhost');
+            define("USER", 'vardas');
 
+            // atvaizduoja kintamuosius, jungia su "." (+ neveikia)
+            echo $name . "<br/>" . $age;
+            echo "duomenu bazes info: " . DB_NAME . "<br  />";
 
           ?>
 
