@@ -7,7 +7,7 @@ $(function() {
 jQuery(function( $ ) {
     // Your code using failsafe $ alias here...
 });
-//=============css=============== 
+//=============css===============
 $( "article > p" ).css( "border", "1px solid gray" );
 
 // arba
@@ -19,9 +19,9 @@ var myCSS = {
 $( "article > p" ).css( myCSS );
 
 // advance: get curent width and height
-//$( p ).css({
+// $( p ).css({
 // 	  width: function( index, value ) {
-// 		console.log("curent width:" + value);  
+// 		console.log("curent width:" + value);
 // 		return parseFloat( value ) * 1.2;
 // 	  },
 // 	  height: function( index, value ) {
