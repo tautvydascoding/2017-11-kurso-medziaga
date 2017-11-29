@@ -37,8 +37,9 @@
                         };
                     ?>
 
-
                 </aside>
                 <main class="col-md-9 bg-light">
+                <!-- ikelia content faila -->
                 <?php include('./content.php') ?>
+<!-- ikelia footer faila -->
 <?php require_once('./footer.php') ?>
