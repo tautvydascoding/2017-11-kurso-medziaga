@@ -1,0 +1,14 @@
+Raudonas dviratis : 1vnt : 369 eur
+Shimano pedalai : 2 vnt : 36 eur
+Lux pedalai : 1 vnt : 6 eur
+
+            // uzduotis 1:
+            // nuskaityta failo eilute sudeti i masyva ir atvaizduoti
+            // <h2> Prekes pavadinimas</h2>
+            // <h3> "Siuo metu turime:" xx vnt </h3>
+            // <button> XX eur </button>
+
+            // uzduotis 2:
+            // uzduoti 1 isspresti naudojant 2 ciklus:
+            // pirmas ciklas skirtas prekes susideti i masyva (matrica)
+            // antras ciklas skirtas prekes atspausdinti
