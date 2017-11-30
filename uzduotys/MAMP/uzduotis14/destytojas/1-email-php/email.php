@@ -8,6 +8,8 @@ $clientEmail = $_GET['elpastas'];
 $clientTitle = $_GET['antraste'];
 $clientQuestion = $_GET['klausimas'];
 
+$clientEmail = trim($clientEmail); // pasalina tarpus pries ir uz (paduoto String)
+
 
 require './libs/PHPMailer-master/PHPMailerAutoload.php';
 
@@ -41,7 +43,9 @@ try {
     $mail->Body    = "<b>$clientQuestion</b>";
     $mail->AltBody = $clientQuestion;
 
-    $mail->send();
+    $mail->send();  // issiuncia email
+
+
     echo '<br><br />Message has been sent';
 } catch (Exception $e) {
     echo 'Message could not be sent.';
