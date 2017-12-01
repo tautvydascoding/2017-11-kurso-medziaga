@@ -28,3 +28,26 @@ UPDATE doctors
        SET name = 'Jooooo', lname = 'Rikoooo'
        WHERE   id = 4;
        // !!!!
+
+
+
+CREATE TABLE IF NOT EXISTS patients (
+    id INT(6) AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(25) ,
+    lname VARCHAR(25),
+    doctor_id INT(6)
+    );
+
+    INSERT INTO patients VALUES('', 'Markas', 'John', 2);
+    INSERT INTO patients VALUES('', 'Tom', 'Karlos', 2);
+    INSERT INTO patients VALUES('', 'Aris', 'Tido', 1);
+    INSERT INTO patients VALUES('', 'Tom', 'Karlos', 3);
+    INSERT INTO patients VALUES('', 'Co', 'John', 1);
+    INSERT INTO patients VALUES('', 'Tom', 'Nano', 5);
+    INSERT INTO patients VALUES('', 'Jili', 'Jato', 4);
+
+    UPDATE patients SET id = 3  WHERE  id = 4;
+    UPDATE patients SET id = 4  WHERE  id = 5;
+    UPDATE patients SET id = 5  WHERE  id = 6;
+    UPDATE patients SET id = 6  WHERE  id = 7;
+    UPDATE patients SET id = 7  WHERE  id = 8;
