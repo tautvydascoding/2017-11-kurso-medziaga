@@ -1,0 +1,446 @@
+html, body{
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+body{
+    background-color: #2E3B49;
+}
+/* --------------------------- BENDROS -------------------------- */
+
+.no-float{
+  clear: both;
+  content: '';
+}
+a:hover{
+    cursor: pointer;
+}
+a:link{
+    text-decoration: none;
+}
+p{
+    color: #F4F4F4;
+}
+h1{
+    color: #1481BA;
+}
+h2{
+    color: #E0E1DD;
+}
+h3{
+        color: #47022A;
+}
+strong{
+    color: #F4F4F4;
+}
+li{
+    color: #1481BA;
+}
+li:hover{
+    color: #CCB951;
+}
+hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+/* --------------------------- FUNKCIJOS -------------------------- */
+
+.hidden-active{
+    display: none;
+}
+
+
+
+/* --------------------------- TESTAVIMO -------------------------- */
+/* --------------------------- DELETE ME -------------------------- */
+
+
+/* LIKO SUTVARKYTI */
+.testAukstis{
+    height: 500px;
+    background-color: red;
+}
+.testPlotis{
+    width: 400px;
+    border: 1px solid green;
+}
+.testPlayer{
+    width: 455px;
+    height: 455px;
+    border: 1px solid red;
+}
+
+/* --------------------------- NAVIGATION -------------------------- */
+
+nav{
+    /*border: 1px solid blue;*/
+    position: fixed;
+    top: 50%;
+    left: 1%;
+    transform: translateY(-50%);
+    z-index: 99;
+}
+nav, header a{
+    /*list-style: none;*/
+    /*text-orientation: sideways-right;
+    writing-mode: vertical-lr;*/
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+nav ul li{
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+    word-spacing: 6px;
+    margin-right: 5px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #F4F4F4;
+    opacity: 0.6;
+    font-size: 14px;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color: #CCB951;
+    opacity: 0.6;
+}
+
+/* --------------------------- HEADER -------------------------- */
+
+header{
+    height: 100vh;
+    background-image: url("../img/bg2.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+}
+header img{
+    position: absolute;
+    top: 20vh;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid white;
+}
+main{
+    background-color: #0D1B2A;
+    height: 1366px;
+}
+.social{
+    position: absolute;
+    top: 80vh;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid red;
+    color: white;
+    width: 60%;
+    min-width: 255px;
+    max-width: 540px;
+}
+.social a{
+    color: white;
+    opacity: 0.6;
+}
+.social a:hover{
+    opacity: 1;
+}
+
+
+/* --------------------------- PLAYER -------------------------- */
+/* Desinej lango pusej fixuotas */
+/* Be wrapo nera centro :/ */
+
+/*.playerWraperis{
+    width: 220px;
+    height: 1365px;
+    max-width: 220px;
+    border: 1px solid red;
+    position: relative;
+}*/
+
+/*.player{
+    height: 500px;
+    width: 200px;
+    min-height: 500px;
+    min-width: 200px;
+    border: 1px solid blue;
+    position: fixed;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    z-index: 1;
+}*/
+
+/* nebe player - laiko vieta salia albumu, kitaip necentruoja */
+.player{
+    width: 450px;
+    /*border: 1px solid white;*/
+}
+
+/* apacioj visur su user fixuotas */
+.musicPlayerWrap{
+    position: fixed;
+    top: 90vh;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid yellow;
+    width: 90%;
+    min-width: 380px;
+    max-width: 840px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+.musicPlayer{
+    color: white;
+    text-align: center;
+}
+/* --------------------------- ALBUMS -------------------------- */
+
+.albumu-Wraper{
+    min-width: 455px;
+    min-height: 455px;
+}
+.albumo-dydis{
+    width: 455px;
+    height: 455px;
+}
+.albumo-info-play-dydis{
+    width: 227px;
+    height: 227px;
+    text-align: center;
+    padding-top: 10px;
+}
+.albumo-info{
+    background-color: rgba(251, 251, 251, 0.9);
+}
+/* pakeitus itema reikia keisti ir padding */
+.album-play-vertical{
+    padding-top: 100px;
+}
+.albumo-info p{
+    color: #0D1B2A;
+}
+
+/* --------------------- ALBUM BACKGROUNDS -------------------- */
+
+.album1-background{
+    background-image: url(../img/albumai/album4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.album2-background{
+    background-image: url(../img/albumai/album3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.album3-background{
+    background-image: url(../img/albumai/album6.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* --------------------------- STATS -------------------------- */
+
+.statsWraper{
+    width: 227.5px;
+    height: 1365px;
+}
+.statsKubas{
+    width: 227.5px;
+    height: 227.5px;
+}
+.kub-centravimas{
+    text-align: center;
+    padding-top: 15%;
+}
+
+/* -------------------- STATS KUBU BACKGROUNDS ------------------- */
+
+.statsKubo-1-background{
+    background-image: url(../img/stats/asdCOMP.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.statsKubo-2-background{
+    background-image: url(../img/stats/clubCOMP.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.statsKubo-3-background{
+    background-image: url(../img/stats/event1COMP.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.statsKubo-4-background{
+    background-image: url(../img/stats/setCOMP.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* --------------------------- REKLAMA -------------------------- */
+/* ------- isstumia kitu divu centravima kol kas nenaudoti ------ */
+
+.reklamos-Wraper{
+    width: 229px;
+    height: 1366px;
+    /* slidwhos features */
+    /*margin: auto;*/
+}
+/* --------------------------- SLIDESHOW -------------------------- */
+
+.mySlides {
+    display: none;
+}
+.mySlides img{
+    width: 229px;
+    height: 1366px;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 8s;
+
+  animation-name: fade;
+  animation-duration: 8s;
+  /*animation-timing-function: linear;*/
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.5;
+    animation-delay: 1s;
+    animation-timing-function: ease-in;
+  }
+  5%{
+      opacity: 1;
+  }
+  85%{
+      opacity: 1;
+      animation-timing-function: ease-out;
+  }
+  100%{
+      opacity: 0.5;
+      animation-timing-function: ease-in-out;
+  }
+}
+.no-cssanimations .reklamos-Wraper img {
+	opacity: 1;
+}
+
+/* --------------------------- REVIEWS -------------------------- */
+
+.review-wraper{
+    padding: 10% 0;
+    width: 1366px;
+    max-width: 1366px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #0D1B2A;
+}
+.review-aukstis{
+    height: 100vh;
+    width: 33.33%;
+}
+.review-dydis{
+    height: 400px;
+    padding: 4%;
+    border: 1px solid white;
+}
+.review-pirmo-pozicija{
+    margin-top: 15vh;
+}
+.review-antro-pozicija{
+    margin-top: 55vh;
+}
+.review-trecio-pozicija{
+    margin-top: 30vh;
+}
+
+
+/* --------------------------- CONTACT -------------------------- */
+.contacts{
+    background-color: #F4F4F4;
+    padding: 15% 10%;
+    width: 1366px;
+    max-width: 1366px;
+}
+form input[type=text], input[type=email]{
+
+
+}
+textarea{
+    background-color: red;
+}
+
+/* --------------------------- FOOTER -------------------------- */
+footer{
+    padding: 10% 2%;
+    width: 1366px;
+    max-width: 1366px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #001021;
+}
+.footer-items{
+    width: 25%;
+    border: 1px solid green;
+    padding: 20px;
+}
+footer img{
+    width: 100%;
+    height: 200px;
+}
+
+/* --------------------------- MEDIA -------------------------- */
+
+/* galima dadeti albumu platejima nes atsiranda daug laisvos vietos nuo 1366 */
+
+@media (min-width: 1367px){
+    header, main{
+        width: 1366px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (min-width: 1367px){
+    /*main{
+        margin-top: 25px;
+    }*/
+}
+@media (max-width: 1366px){
+    header{
+        height: 100vh;
+    }
+}
+@media (max-width: 1024px){
+    header{
+        height: 100vh;
+        width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main{
+        width: 910px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+    }
+    .testAds{
+        display: none;
+    }
+    .testPlayer{
+        width: 227px;
+
+    }
+}

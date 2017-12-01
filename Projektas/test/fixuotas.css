@@ -1,0 +1,68 @@
+html, body{
+    height: 100%;
+    width: 1366px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body{
+    background-color: yellow;
+    color: white;
+    border: 1px solid red;
+}
+.no-float{
+    clear: both;
+    content: "";
+}
+.medijosKontikas{
+    width: 1366px;
+    height: 768px;
+    border: 1px dashed green;
+}
+.musicPlayer-matmenys{
+    width: 455px;
+    height: 100%;
+    /*border: 1px solid white;*/
+    float: left;
+}
+.albumai-matmenys{
+    width: 455px;
+    height: 100%;
+    /*border: 1px solid green;*/
+    background-color: yellow;
+    float: left;
+}
+.albumas{
+    height: 256px;
+    width: 455px;
+    background-color: blue;
+    border: 1px solid black;
+}
+.albumoAprasymas{
+    height: 128px;
+    width: 113px;
+    background-color: red;
+}
+.albumoPlay{
+    height: 128px;
+    background-color: green;
+}
+.statistika-matmenys{
+    width: 227px;
+    height: 100%;
+    float: left;
+}
+.reklama-matmenys{
+    width: 227px;
+    height: 100%;
+    /*border: 1px solid blue;*/
+    background-color: pink;
+    float: left;
+}
+
+/*@media (min-width: 1366px){
+    html{
+        width: auto;
+    }
+}*/
