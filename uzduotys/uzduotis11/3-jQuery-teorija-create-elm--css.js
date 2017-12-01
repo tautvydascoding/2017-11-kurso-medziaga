@@ -35,7 +35,7 @@ $("p").remove(".test, .demo"); // removes elements with class="test" and class="
 
 
 //============= add Class ===============
-// simple js
+// -------simple js------
 
 // var d = document.getElementById("div1");
 // d.className += " otherclass";
@@ -43,7 +43,7 @@ $("p").remove(".test, .demo"); // removes elements with class="test" and class="
 // d.classList.remove("otherclass");
 // d.classList.toggle('otherclass');
 
-// jQuery
+//   -------jQuery------
 
 // addClass()     Adds one or more classes to the selected elements
 // addClass( [function( index, curentClass)] ) - // NOTE: receives the INDEX position of the element in the set and the existing class name(s) as ARGUMENTS. Within the function, this refers to the current element in the set
@@ -73,15 +73,15 @@ $("p").remove(".test, .demo"); // removes elements with class="test" and class="
 //    return index + currentClass;
 // });
 //add the "green" class to a div that already has a "red" class
-$( "div" ).addClass(function( index, currentClass ) {
-   var addedClass;
-
-   if ( currentClass === "red" ) {
-       addedClass = "green";
-       $( "p" ).text( "There is one green div" ); 
-   }
-   return addedClass;
-});
+// $( "div" ).addClass(function( index, currentClass ) {
+//    var addedClass;
+//
+//    if ( currentClass === "red" ) {
+//        addedClass = "green";
+//        $( "p" ).text( "There is one green div" );
+//    }
+//    return addedClass;
+// });
 
 //=================has Class==============
 if ( document.getElementById("MyElement").classList.contains('MyClass') ) {}
