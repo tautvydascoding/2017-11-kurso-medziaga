@@ -1,0 +1,5 @@
+kazkas "venis" : 1vnt : 10.00eur
+kazkas "asdas" : 1vnt : 10.00eur
+kazkas "gggg" : 1vnt : 10.00eur
+kazkas "hdd" : 1vnt : 10.00eur
+kazkas "asdas" : 1vnt : 10.00eur
