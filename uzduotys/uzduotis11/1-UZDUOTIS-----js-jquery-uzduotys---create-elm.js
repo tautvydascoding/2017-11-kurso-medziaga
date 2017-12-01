@@ -7,6 +7,7 @@ console.log("Labas");
 
 // 1.1
 // su js sukurti <header> ir <footer>
+// ir ideti juos i body
 
 // 1.2
 // i <header> ir <footer> ideti <img> elementa
