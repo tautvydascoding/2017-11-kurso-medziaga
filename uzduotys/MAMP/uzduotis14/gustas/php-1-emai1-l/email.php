@@ -33,7 +33,7 @@ try {
 
     //Attachments
     // $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-    $mail->addAttachment('./2.jpg', 'new.jpg');    // Optional name
+    // $mail->addAttachment('./2.jpg', 'new.jpg');    // Optional name
 
     //Content
     $mail->isHTML(true);                                 // Set email format to HTML
@@ -42,7 +42,7 @@ try {
     $mail->AltBody = $clientText;
 
     $mail->send();
-    echo 'Pavyko issiusti';
+    echo 'Žinutė išsiųsta!';
 } catch (Exception $e) {
     echo '<br />Message could not be sent.';
     echo 'Mailer Error: ' . $mail->ErrorInfo;
