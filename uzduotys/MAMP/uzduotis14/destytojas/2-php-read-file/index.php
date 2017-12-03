@@ -18,12 +18,29 @@
         </div>
 
 <?php
+    $prekesArray = array();
+    $i = 0;
     // "r" - read file
     $prekesFile = fopen('./prekes.txt',  "r") or die("Failo \"prekes.txt\" nepavyko rasti");
     while ( !feof($prekesFile) ) {
          // echo "dar neradau failo pabaigos";
-         echo fgets($prekesFile ) . "<br";
+         $eilute = fgets($prekesFile );
+         if ($eilute != "" ) {
+             $temp = explode(" : ", $eilute); // Array ( [0] => Dvir ..." [1] => 1vnt [2] => 50Eur )
+             if(count($temp) == 3) {
+                 // $prekesArray[0] = $temp[0];
+                 // arba
+                 $prekesArray[$i] = array();
+                 $prekesArray[$i]["name"] = $temp[0];
+                 $prekesArray[$i]["number"] = $temp[1];
+                 $prekesArray[$i]["price"] = $temp[2];
+                 $i++;
+             } else {
+                 echo "sekrotore, prekiu failo eiluteje truksta: " . (2 - (count($temp) - 1) . " eiluteje: $i");
+             }
+         }
     }
+    print_r($prekesArray);
     // ..
     fclose($prekesFile);  // istrina is RAM
 
