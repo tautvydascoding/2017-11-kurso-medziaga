@@ -13,17 +13,19 @@
  //    public $spalva = "#a34baa";
  //    private $amzius = 5;
 
- // uzduotis 0: susikurti 3 Obj. klasas Liutas
+ // uzduotis 0: susikurti 3 Obj. klases Liutas
   // uzduotis 1: pakeisti visu triju liutu spalvas (ir pakeitimus atspausdinti)
 
    // uzduotis2: A) Liuto klasei susikurti PRIVATU kintamaji "name". ir uskurti 2 funkcijas jo reiksmei pakeisti ir paimti "setName($x)", "getName()".
    B) Pakeisti vardus ir atspausdinti
 
-    // uzduotis 3 - pabandyti paveldimuma:
+    // uzduotis 3  :
     // 1) sukurti dvi klases: User, Admin
-    // 2) User klase turi kintamuosius : username, password, rights ir funkcija Login($name, $pass)
-    // 3) Admin klase  funkcijas:  changeUserName($nm),  changeRights($rgt)
-    // 4)
+    // 2) User klase turi kintamuosius : username, password, rights ir funkcija Login($name, $pass) return true/ false
+    // 3) Admin klase  funkcijas:
+    changeUserName($newName) - pakeicia savo varda
+    changeRights($rgt) - pakeicia savo teisias
+    // 4) Admin klase paveldi User
      // A) issivesti username,
      // B) pakeisti username
      // C) issivesti username
