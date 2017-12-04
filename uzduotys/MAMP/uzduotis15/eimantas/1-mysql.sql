@@ -53,7 +53,25 @@ INSERT INTO img VALUES('', '1', '1.jpg');
 INSERT INTO img VALUES('', '2', '3.jpg');
 INSERT INTO img VALUES('', '4', '0.jpg');
 
+-- uzduotis 1: istrinti gydytoja "Kotis"
+DELETE FROM doctors
+WHERE id = 5;
 
+-- uzduotis 2: Pakeisti "Co" varda i "Karolis"
+UPDATE patients
+    SET name = 'Karolis'
+    where name = 'Co';
+
+-- uzduotis 3: visu pacientu, kuriu vardas prasideda "T" -  daktarus pakeisti i "4"
+UPDATE patients
+    SET doctor_id = '4'
+    where name LIKE 'T%';
+
+-- uzduotis 4: gauti paciento "Tomas" daktaro pavard
+
+
+SELECT doctors.lname FROM doctors INNER JOIN patients ON patients.doctor_id = doctors.id
+WHERE patiens.name = 'Tomas';
 
 
 
