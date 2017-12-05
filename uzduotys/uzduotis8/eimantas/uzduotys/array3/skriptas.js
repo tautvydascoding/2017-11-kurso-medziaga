@@ -17,7 +17,7 @@ console.log("masyvo ilgis " + names.length );
 
 names.push("butelis vandens");
 names[names.length] = "butelis vandens";
-names.splive(names.length, 0, "butelis vandens");
+names.splice(names.length, 0, "butelis vandens");
 
 // 2. i masyvo pradzia ideti elmenta “ziebtuvelis”
 
