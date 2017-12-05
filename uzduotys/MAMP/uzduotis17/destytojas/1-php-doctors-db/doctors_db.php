@@ -42,7 +42,7 @@ print_r($daktaras);
      $mano_sql = "INSERT INTO doctors VALUES('', '$vardas', '$pavarde');";
      $result = mysqli_query($connect, $mano_sql);
      if ($result) {
-         echo "Naujas gydytojas issaugotas <br />";
+         // echo "Naujas gydytojas issaugotas <br />";
      } else {
          echo "ERROR: nepavyko issaugoti gydytojo. " . mysqli_error($connect);
      }
@@ -53,10 +53,79 @@ print_r($daktaras);
 
  // uzduotis 3
  // sukurti f-ja deleteDoctor($id)
- 
+function deleteDoctor($connect, $id) {
+    $mano_sql = "DELETE FROM doctors WHERE id=$id";
+    $result = mysqli_query($connect, $mano_sql);
+    if ($result) {
+        // echo "Gydytojas istrintas <br />";
+    } else {
+        echo "ERROR: nepavyko istrinti gydytojo. " . mysqli_error($connect);
+    }
+}
+deleteDoctor($connection, 10);
+
  // uzduotis 4
  // sukurti f-ja editeDoctor(...);
+ function editeDoctor($connect, $vardas, $pavarde, $id){
+     $mano_sql = "UPDATE doctors
+                        SET
+                            name = '$vardas',
+                            lname = '$pavarde'
+                        WHERE id=$id
+                  ";
+
+     $result = mysqli_query($connect, $mano_sql);
+     if ($result) {
+          echo "Gydytojo duomenys pakeisti sekmingai <br />";
+     } else {
+         echo "ERROR: nepavyko pakeist gydytojo duomenu  " . mysqli_error($connect);
+     }
+ }
+ $daktaras = getDoctor($connection, 4);
+ editeDoctor($connection,  "Pietkus", $daktaras['lname'], 4);
+
+ // $daktaras = getDoctor($connection, 9);
+ // print_r($daktaras);
+
  // uzduotis 5
  // sukurti f-ja getDoctors();
+ function getDoctors($connet) { // $nr, $connet- yra local
+     $mano_sql = " SELECT * FROM doctors ORDER BY name DESC "; // ASC
+     // mysqli_query - vykdo SQL ka uzsakete
+     $result = mysqli_query($connet, $mano_sql); // is DB grista duomenys obj. formatu
+     if ($result) {
+         return $result; // return: mysql Object
+     } else {
+         echo "ERROR: Ivyko klaida <br>" . mysqli_error($connet);
+     }
+ }
+ $daktarai = getDoctors($connection);
 
-//
+ if(  mysqli_num_rows($daktarai) > 0) {
+     echo "Viso rasta daktaru: " . mysqli_num_rows($daktarai) . "<br>";
+
+     // foreach ($daktarai as $daktaras) {
+     //     echo "Nr: " . $daktaras['id'] . " <br />";
+     //     echo "Vardas: " . $daktaras['name'] . " <br />";
+     //     echo "Pavarde: " . $daktaras['lname'] . " <br />";
+     // }
+     // arba
+     $daktaras = mysqli_fetch_assoc($daktarai);  // is mysql Objekto  paima pirma daktara ir sudeda i masyva
+     while( $daktaras){
+             echo "Nr: " . $daktaras['id'] . " <br />";
+             echo "Vardas: " . $daktaras['name'] . " <br />";
+             echo "Pavarde: " . $daktaras['lname'] . " <br />";
+             $daktaras = mysqli_fetch_assoc($daktarai);  // is mysql Objekto  paima pirma daktara ir sudeda i masyva
+     }
+ } else {
+     echo "Nerasta daktaru <br>";
+ }
+  // mysqli_num_rows($result) > 0
+   // $r = mysqli_fetch_assoc($result); // objiekta paverciam i masyva
+   //  while ($r) {
+   //       $r = mysqli_fetch_assoc($result); // objiekta paverciam i masyva
+   //  }
+
+
+
+    //
