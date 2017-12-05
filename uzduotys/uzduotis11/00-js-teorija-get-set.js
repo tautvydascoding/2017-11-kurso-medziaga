@@ -1,7 +1,7 @@
 
 
 //=====================================
-document.getElementsByClassName(".super");
+document.getElementsByClassName("super");
 document.getElementsByTagName("h1");
 document.getElementById("wrapper");
 
