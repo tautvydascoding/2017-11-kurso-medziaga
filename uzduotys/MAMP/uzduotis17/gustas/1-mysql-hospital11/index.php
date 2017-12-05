@@ -97,7 +97,44 @@ print_r($keitimas);
 // uzduotis 5
 // sukurti f-ja getDoctors();
 
+
+function getDoctors($prisijung){ //nr ir prisijung yra local!!!!!!!!
+    $mano_sql = "SELECT * FROM doctors ORDER BY name DESC;";//asc yra didejimo tvarka
+                //ivykdo virsuj apsirasyta sql funkcija
+    $result = mysqli_query($prisijung, $mano_sql);// is duomenu bazes grizta duomenys objekto formatu
+
+    if($result){
+        return $result; // grazina visa my-sql objekta
+    }else {
+        echo "ivyko klaida: error!!! <br />" . mysqli_error($prisijung);
+    }
+}
+
+$daktarai = getDoctors($connection);
 //
+if( mysqli_num_rows($daktarai) > 0){
+    echo "<br />Viso rasta daktaru: " . mysqli_num_rows($daktarai) . "<br />"; //  mysqli_num_rows($daktarai) grazina kiek yra duomenu is viso
+
+    // foreach($daktarai as $daktaras){
+    //     echo "Nr: " . $daktaras ['id'] . "<br />";
+    //     echo "Vardas: " . $daktaras ['name'] . "<br />";
+    //     echo "Pavarde: " . $daktaras ['lname'] . "<br /><br />";
+    // }
+
+    //arba
+    $daktaras = mysqli_fetch_assoc($daktarai); //is mysql OBJEKTO paimama pirma eilute ir sudeda i masyva
+    while($daktaras){
+        echo "Nr: " . $daktaras ['id'] . "<br />";
+        echo "Vardas: " . $daktaras ['name'] . "<br />";
+        echo "Pavarde: " . $daktaras ['lname'] . "<br /><br />";
+        $daktaras = mysqli_fetch_assoc($daktarai); //is mysql OBJEKTO paimama pirma eilute ir sudeda i masyva
+    }
+} else{
+    echo "Lentele yra tuscia";
+}
+// print_r($daktarai);
+//
+// echo "<br />Daktarai:" . $daktaras['name'] . "<br />";
 
 
 
