@@ -17,12 +17,24 @@
 
  // uzduotis 1
  // sukurti f-ja getDoctor($id)
-function getDoctor($nr) { // $nr yra local
-    $mano_sql = " SELECT * FROM doctors;"
+function getDoctor($connet, $nr) { // $nr, $connet- yra local
+    $mano_sql = " SELECT * FROM doctors
+                           WHERE id=$nr;
+                 ";
+    // mysqli_query - vykdo SQL ka uzsakete
+    $result = mysqli_query($connet, $mano_sql); // is DB grista duomenys obj. formatu
+    if ($result) {
+        $result = mysqli_fetch_assoc($result); // objiekta paverciam i masyva
+        return $result;
+    } else {
+        echo "ERROR: Ivyko klaida <br>" . mysqli_error($connet);
+    }
 }
 
- $daktaras = getDoctor(3);
+ $daktaras = getDoctor($connection, 5);
  echo "Daktares vardas:" .  $daktaras['name']. "<br>";
+print_r($daktaras);
+
 
  // uzduotis 2
  // sukurti f-ja createDoctor(...)
