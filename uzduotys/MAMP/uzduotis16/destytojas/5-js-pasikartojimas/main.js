@@ -55,6 +55,6 @@ $('ul li').eq(1).css(style);
 // js budu
 var x = document.querySelector('ul li');
 console.log(x);
-document.querySelectorAll('h1')[0].style('color', 'blue');
+document.querySelectorAll('h1').style.color='blue' ;
 
 //

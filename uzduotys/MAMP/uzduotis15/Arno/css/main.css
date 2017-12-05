@@ -1,0 +1,7 @@
+.patiekaloTipas{
+    border-radius: 10px;
+    border: 5px dashed red;
+}
+.patiekaloTipas h5{
+    padding: 15px;
+}
