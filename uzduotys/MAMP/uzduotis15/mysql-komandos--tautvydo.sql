@@ -8,7 +8,14 @@ show tables;
 SELECT USER, PASSWORD, password_expired FROM user;
 SELECT * FROM user;
 
- CREATE USER 'tautvydas10'@'localhost' IDENTIFIED BY 'tratata';
+ CREATE USER 'tautvydas10'@'localhost' IDENTIFIED BY 'tratata';  // tratata - spaltazodis
+
+" "
+' '
+` ` - tables, db pavadinimams
+ word kabute - !!!! neveikia
+
+
 
  GRANT ALL PRIVILEGES ON * . * TO 'tautvydas10'@'localhost' WITH GRANT OPTION;
 
@@ -24,7 +31,7 @@ GRANT ALL PRIVILEGES ON * . * TO 'tautvydasDelete'@'localhost' WITH GRANT OPTION
 
 
 
-		USER     IF NOT EXISTS
+USER     IF NOT EXISTS
  CREATE DATABASE IF NOT EXISTS  `hospital6` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
 		TABLE    IF NOT EXISTS
 

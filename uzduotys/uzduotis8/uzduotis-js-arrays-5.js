@@ -6,17 +6,7 @@ var max = 100;
 // 1 kursime nauja masyva uzpildyta, atsitiktiniais skaiciais nuo 10 - 100
 // 2 uzdavinys:  skaicius, kurie yra lyginiai i pakeisti i zodi "lyginis"
 
-<<<<<<< HEAD
 
-
-
-
-
-
-
-
-=======
->>>>>>> a9e70fe74c58fa08e003127275a2019c49c110ae
 // rimta
 // 1 kursime nauja masyva uzpildyta, atsitiktiniais skaiciais nuo 50 - 200 (pagamintomis datalemis per diena)
 
