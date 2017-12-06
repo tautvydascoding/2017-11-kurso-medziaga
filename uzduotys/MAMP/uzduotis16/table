@@ -1,0 +1,46 @@
+CREATE TABLE Scameriai (
+    ID int,
+    Vardas varchar(255),
+    Pavarde varchar(255),
+    Banko_saskaitos_numeris varchar(255),
+    Trumpai varchar(255)
+);
+
+
+CREATE TABLE scameriai (
+   id INT(6) AUTO_INCREMENT PRIMARY KEY,
+   vardas varchar(25),
+   pavarde varchar(30),
+   saskaitosNR varchar(50),
+   Trumpai varchar(255)
+   );
+
+   INSERT INTO scameriai  VALUES  ('', 'Markas', 'Jononas' , 'LT317854156521','pavoge loki' );
+   INSERT INTO scameriai  VALUES  ('', 'Tomas', 'Bonas' , 'LT317854154574','pavoge arkli' );
+   INSERT INTO scameriai  VALUES  ('', 'Adamkus', 'Jonpas' , 'LT7177574551','pavoge nama' );
+   INSERT INTO scameriai  VALUES  ('', 'Deimas', 'Uinonas' , 'LT368541446456','pavoge bebra' );
+   INSERT INTO scameriai  VALUES  ('', 'Urkas', 'Cnonas' , 'LT317854158964','pavoge kelma' );
+
+
+
+
+  DELETE FROM scameriai
+  WHERE doctor_id;
+
+
+  DELETE FROM scameriai
+  WHERE doctor_id = 'doctor_id';
+
+
+  CREATE TABLE irodymaiImg (
+     id INT(6) AUTO_INCREMENT PRIMARY KEY,
+     pavadinimas varchar(25),
+     scamerioID varchar(5)
+    );
+
+
+    INSERT INTO irodymaiImg  VALUES  ('', 'pic-46.jpg', '5');
+    INSERT INTO irodymaiImg  VALUES  ('', 'pic-46.PNG', '1');
+    INSERT INTO irodymaiImg  VALUES  ('', 'pic-456.jpg', '3');
+    INSERT INTO irodymaiImg  VALUES  ('', 'pic-4234234.GIF', '2');
+    INSERT INTO irodymaiImg  VALUES  ('', 'pic-4622.GIF', '4');
