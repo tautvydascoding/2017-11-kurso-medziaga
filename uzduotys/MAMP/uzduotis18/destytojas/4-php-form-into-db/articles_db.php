@@ -12,6 +12,9 @@
  define('DB_NAME', 'savaite4');
 
  $connection = mysqli_connect( DB_HOST, DB_USER, DB_PASS, DB_NAME, 8889);
+ // nustato formata, kuris palaiko liekutviu simbolius
+ mysqli_set_charset($connection, 'utf8'); // !!!  utf8 - "-" skyriklio, nes neveiks
+
  function getConnection() {
      global $connection;
      // if ($connection == false) {
@@ -20,7 +23,6 @@
      }
      return $connection;
  }
-
 
 
  // $my_sql = "INSERT INTO articles
@@ -43,7 +45,7 @@ function createArticle($title, $content, $user_nr) {
 
     $title = mysqli_real_escape_string(getConnection(), $title);
     $content = mysqli_real_escape_string(getConnection(), $content);
-    if( ! findArticleTitle($title)) {
+
         $my_sql = "INSERT INTO articles
         VALUES (
             '',
@@ -56,6 +58,5 @@ function createArticle($title, $content, $user_nr) {
         if (!$query) {
             echo "ERROR: sukurti straipsnio nepavyko" . mysqli_error(getConnection() );
         }
-    }
 }
 // createArticle("Rastas milijonas litu", "Bet is jo naudos jokios", 6);
