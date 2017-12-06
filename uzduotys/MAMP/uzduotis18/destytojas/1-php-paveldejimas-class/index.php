@@ -28,4 +28,8 @@ echo "Monikos ugis:" .  $Monika->ugis . "<br>";
 echo "Monikos2 ugis:" .  $Monika2->ugis . "<br>";
 $Monika->print();
 //
-echo "Monikos2 ugis:" .  $Monika->getSvoris() . "<br>";
+echo "Monikos svoris:" .  $Monika->getSvoris() . "<br>";
+ $Monika->setSvoris(120);
+echo "Monikos svoris:" .  $Monika->getSvoris() . "<br>";
+echo "Monikos pinigai:" .  $Monika->getPinigai() . "<br>";
+echo "Monikos estrogenai:" .  $Monika->getEstrogenai() . "<br>";
