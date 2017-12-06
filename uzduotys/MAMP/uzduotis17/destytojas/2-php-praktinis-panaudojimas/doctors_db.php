@@ -15,7 +15,7 @@
      die ("ERROR: prisijungti pri DB nepavyko. " . mysqli_connect_error());
  }
 
- // uzduotis 1
+ // ---------------------------------------------
 function getDoctor($connet, $nr) { // $nr, $connet- yra local
     $mano_sql = " SELECT * FROM doctors
                            WHERE id=$nr;
@@ -29,13 +29,13 @@ function getDoctor($connet, $nr) { // $nr, $connet- yra local
         echo "ERROR: Ivyko klaida <br>" . mysqli_error($connet);
     }
 }
-
+ // ---------------------------------------------
 //  $daktaras = getDoctor($connection, 5);
 //  echo "Daktares vardas:" .  $daktaras['name']. "<br>";
 // print_r($daktaras);
 
 
- // uzduotis 2
+ // ---------------------------------------------
  function createDoctor($connect, $vardas, $pavarde){
      $mano_sql = "INSERT INTO doctors VALUES('', '$vardas', '$pavarde');";
      $result = mysqli_query($connect, $mano_sql);
@@ -45,11 +45,12 @@ function getDoctor($connet, $nr) { // $nr, $connet- yra local
          echo "ERROR: nepavyko issaugoti gydytojo. " . mysqli_error($connect);
      }
  }
+  // ---------------------------------------------
  // createDoctor($connection, "Zygimantas", "Korlov");
  // $daktaras = getDoctor($connection, 9);
  // print_r($daktaras);
 
- // uzduotis 3
+ // ---------------------------------------------
 function deleteDoctor($connect, $id) {
     $mano_sql = "DELETE FROM doctors WHERE id=$id";
     $result = mysqli_query($connect, $mano_sql);
@@ -59,9 +60,10 @@ function deleteDoctor($connect, $id) {
         echo "ERROR: nepavyko istrinti gydytojo. " . mysqli_error($connect);
     }
 }
+ // ---------------------------------------------
 // deleteDoctor($connection, 10);
 
- // uzduotis 4
+ // ---------------------------------------------
  function editeDoctor($connect, $vardas, $pavarde, $id){
      $mano_sql = "UPDATE doctors
                         SET
@@ -77,10 +79,11 @@ function deleteDoctor($connect, $id) {
          echo "ERROR: nepavyko pakeist gydytojo duomenu  " . mysqli_error($connect);
      }
  }
+  // ---------------------------------------------
  // $daktaras = getDoctor($connection, 4);
  // editeDoctor($connection,  "Pietkus", $daktaras['lname'], 4);
 
- 
+  // ---------------------------------------------
  function getDoctors($connet) { // $nr, $connet- yra local
      $mano_sql = " SELECT * FROM doctors ORDER BY name DESC "; // ASC
      // mysqli_query - vykdo SQL ka uzsakete
@@ -91,7 +94,9 @@ function deleteDoctor($connect, $id) {
          echo "ERROR: Ivyko klaida <br>" . mysqli_error($connet);
      }
  }
- $daktarai = getDoctors($connection);
+  // ---------------------------------------------
+  
+ // $daktarai = getDoctors($connection);
 
  // if(  mysqli_num_rows($daktarai) > 0) {
  //     echo "Viso rasta daktaru: " . mysqli_num_rows($daktarai) . "<br>";
