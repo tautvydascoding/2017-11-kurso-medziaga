@@ -88,15 +88,30 @@ function editDoctor($id, $newName, $newLname, $con){
     }
 }
 
-editDoctor(8, "Haris", "Harauskas", $connection);
+// editDoctor(8, "Haris", "Harauskas", $connection);
 
  // uzduotis 5
  // sukurti f-ja getDoctors();
 
+function getDoctors($con){
+    $my_sql = "SELECT * FROM doctors;";
+    $result = mysqli_query($con, $my_sql);
 
 
+    if ($result->num_rows > 0) {
+        echo "<table><tr><th>ID</th><th>Name</th></tr>";
+        // output data of each row
+        while($row = $result->fetch_assoc()) {
+            echo "<tr><td>" . $row["ID"] . "</td><td>" . $row["name"]. " " . $row["lname"]. "</td></tr>";
+        }
+        echo "</table>";
+    } else {
+        echo "0 results";
+    }
+}
 
-
+$rodo = getDoctors($connection);
+print_r($rodo);
 
 
 
