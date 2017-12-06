@@ -1,54 +1,59 @@
 <?php
 
-define('HOST', 'localhost');
-define('DB_NAME', 'hospital11');
-define('DB_USER', 'testas1');
-define('DB_PASS', 'root');
+
+define ('HOST', 'localhost');
+define ('DB_NAME', 'scamsite');
+define ('DB_USER', 'testas1');
+define ('DB_PASS', 'root');
 
 
-$connection = mysqli_connect( HOST, DB_USER, DB_PASS, DB_NAME);
+$connection = mysqli_connect ( HOST, DB_USER, DB_PASS, DB_NAME );
 
-if ($connection) {
-    echo "Prisijungem prie DB sekmingai";
-}else{
-    die("error: prisijungt nepavyko: " . mysqli_connect_error());
+    if($connection) {
+        echo "Prisijungem prie duombazes";
+    }else {
+        die ("ERROR: prisijungt nepavyko. Klaida: " . mysqli_li_error());
+    }
+
+function idetiScameri() {
+    $vardas = "Eugenijus";
+    $pavarde = "Abrikosas";
+    $saskaitosNR = "LT39785178";
+    $Trumpai = "suvalge begemota";
+
+    $kitas_sql = "INSERT INTO scameriai VALUES('', '$vardas','$pavarde','$saskaitosNR','$Trumpai' )";
+
+    $rezultatas = mysqli_query($connection,$kitas_sql);
+
+    if($rezultatas) {
+        echo " Duomenys ideti sekmingai ";
+    }else {
+        echo " Duomenu ideti nepavyko " . mysqli_error($connection);
+
+    }
+
 }
 
+function paimtiScameri($x, $con) {
+    $kitas_sql = "SELECT * FROM scameriai
+                            WHERE id=$x;
 
-$vardas = "Tomas";
-$pavarde = "Tomaitis";
-$daktaro_id = 3;
-
-
-function createPAtienet() {
-
-    $mano_sql = "INSERT INTO patients VALUES('', '$vardas', '$pavarde', '$daktaro_id');";
-
-    $result = mysqli_query($connection, $mano_sql);
-    if ($result) {
-        echo "Duomenys:  $vardas, $pavarde ideti sekmingai ";
-    }else{
-        echo "Nepavyko prideti duomenu: $vardas, $pavarde". mysqli_error($connection);
+                        ";
+    $rezultatas = mysqli_query($con, $kitas_sql);
+    if ($rezultatas) {
+        var_dump($rezultatas);
+        $rezultatas = mysqli_fetch_array($rezultatas);
+        return $rezultatas;
+    }else {
+        echo "klaida " . mysqli_error($con);
     }
 }
+$scameris = paimtiScameri(1,$connection);
+print_r($scameris);
 
 
 
-function getPatients($x, $con) {
-    $mano_sql = "SELECT * FROM patients
-                          WHERE id=$x;
-                ";
-        $result = mysqli_query($con, $mano_sql);
-        if ($result){
-            var_dump($result);
-            $result = mysqli_fetch_assoc($result); // object pavercia i array
-            return $result;
-        }else {
-            echo "klaida: " . mysqli_error($con);
-        }
-}
-$pacientas = getPatients(1, $connection);
-print_r($pacientas);
+
 
 
  ?>

@@ -1,5 +1,10 @@
+var objektas = new objektas (name, age) {       
+          this.name=name,
+         this.age = age
+};
+var zmogus = objektas ("tomas", 21);
 
-//===============create element==================
+//===============Create element================== 
 var elementas0 = "<p> <button>Register</button> </p>";
 var elementas1 = "<p>" +
     "<button>Register</button>" +
@@ -14,7 +19,7 @@ var elementas2 = $("<p></p>").html("<button>Register</button>");  // note: If a 
 
 var elementas2 = document.createElement("p");
 elementas2.innerHTML = "<button>Register</button>";
-//=====================================
+//================== 
 // more complex
 $("<footer></footer>", {
    "class": "test",
@@ -43,7 +48,7 @@ $("p").remove(".test, .demo"); // removes elements with class="test" and class="
 // d.classList.remove("otherclass");
 // d.classList.toggle('otherclass');
 
-//   -------jQuery------
+//   -------jQuery-CLASS-----
 
 // addClass()     Adds one or more classes to the selected elements
 // addClass( [function( index, curentClass)] ) - // NOTE: receives the INDEX position of the element in the set and the existing class name(s) as ARGUMENTS. Within the function, this refers to the current element in the set
@@ -89,7 +94,28 @@ if ( document.getElementById("MyElement").className.match(/(?:^|\s)MyClass(?!\S)
 
 // jQuery
 if ( $('#MyElement').hasClass('MyClass') ) {}
+// arba
+$( 'p' ).is( ".blue, .red" );
 
+//$( "div"  ).one( "click", function() {
+//   if ( $( this ).is( ":first-child" ) ) {
+//     $( "p" ).text( "It's the first div." );
+//   } else if ( $( this ).is( ".blue,.red" ) ) {
+//     $( "p" ).text( "It's a blue or red div." );
+//   } else if ( $( this ).is( ":contains('Peter')" ) ) {
+//     $( "p" ).text( "It's Peter!" );
+//   }
+//   });
+// 
+// <div></div>
+// <div class="blue"></div>
+// <div></div>
+// <div class="red"></div>
+// <div><br/><span>Peter</span></div>
+// <div class="blue"></div>
+// <p>&nbsp;</p>
+
+ 
 //=============set  attribute===============
 //$("h2", 'article').attr('id','a1234');
 

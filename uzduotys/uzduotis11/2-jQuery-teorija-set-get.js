@@ -25,7 +25,7 @@ console.log( elm.text());         // WORKS !!!
 
 
 
-//=============set data=========
+//=============SET text/ HTML / VAL=========
 //.text(...)
 //.html(...)
 //.val(...)
@@ -40,7 +40,15 @@ console.log( elm.text());         // WORKS !!!
 // Form'oje ivesti teksta uz vartotoja "val()"
 //$("form input").val("Type Username here");
 
+//$('form input').attr('value', 'Tomas');      
+//---JS ---
 
+//document.getElementsByTagName("input")[0].value = "Tomas";                  
+//document.getElementsByTagName("input")[0].setAttribute('value','Tomas');     
+//document.myform.vardas.value = 'Tomas';       
+//                 <form name="myform">
+//                         <input class="aa" name="vardas" type="text" value="" >
+//                     </form>
 
 //=====================================
 //  objekto (Node) arba teksto - idejimas i HTML

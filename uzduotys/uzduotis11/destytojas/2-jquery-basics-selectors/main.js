@@ -14,7 +14,7 @@ console.log("lasbas");
           }
         });
    });
-  
+
 
 $("h1").css("color", "red");
 var antraste = $("h1");
@@ -43,4 +43,5 @@ $('li:eq(1)').css("color", "white");
 
 // $('h2').siblings().css('property', 'value');
 
- 
+
+$('h2').addClass('text-light'); $('h1').attr('id', 'antraste'); $("header h1").text('<b>Pakeiciau h1</b>');
