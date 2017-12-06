@@ -18,6 +18,7 @@ var x = $('li:first').text(); // text() - paima turini
 // arba
 var x = $('li').eq(0).text();
 
+
 $('h1').text(x); // text(x) - idada "x" i turini
 //-----------------------
 // $('li').addClass('active');
@@ -27,7 +28,7 @@ $('ul li').on('click', function() {
     // $('ul li').removeClass('active');
 
     if ($(this).hasClass('active')) {
-        $(this).removeClass('active')
+        $(this).removeClass('active');
     } else {
         $('ul li').removeClass('active');
         $(this).addClass('active');
