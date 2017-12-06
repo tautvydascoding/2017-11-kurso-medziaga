@@ -7,6 +7,30 @@ $(function() {
 jQuery(function( $ ) {
     // Your code using failsafe $ alias here...
 });
+
+//========array=============
+var x = [ 52, 97 ];
+$.each(x, function( index, value ) {
+  console.log( index + ": " + value );
+});
+// arba obj
+var obj = {
+  "name": "Tomas",
+  "age": "21"
+};
+$.each( obj, function( key, value ) {
+   console.log( key + ": " + value );
+});
+$( "li" ).each(function( index ) {
+  console.log( index + ": " + $( this ).text() );
+});
+//----js---
+ <button onclick="x.forEach(myFunction)">Try it</button>
+ var x = [ 52, 97 ]; 
+function myFunction(item,index,arr) {
+    arr[index] = item + 1;
+    console.log( x);
+}
 //=============css===============
 $( "article > p" ).css( "border", "1px solid gray" );
 

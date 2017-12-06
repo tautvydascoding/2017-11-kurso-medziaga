@@ -14,6 +14,7 @@ CREATE TABLE patients (
         name varchar(25),
         lname varchar(25)
 );
+
 CREATE TABLE img (
         id int(6) AUTO_INCREMENT PRIMARY KEY,
         patients_id int(6),
