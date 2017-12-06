@@ -4,6 +4,8 @@
     define("DB_PASS", "root");
     define("DB_NAME", "hospital11");
 
+    // uzduotis 1
+    // sukurti f-ja getDoctor($id)
 
 $connection = mysqli_connect (DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
@@ -35,3 +37,16 @@ print_r($daktaras); //galima paziuret kas grizo is duomenu bazes, masyva padare 
 //
 
  ?>
+
+ // uzduotis 2
+ // sukurti f-ja createDoctor(...)
+
+
+ // uzduotis 3
+ // sukurti f-ja deleteDoctor($id)
+ // uzduotis 4
+ // sukurti f-ja editeDoctor(...);
+ // uzduotis 5
+ // sukurti f-ja getDoctors();
+
+//
