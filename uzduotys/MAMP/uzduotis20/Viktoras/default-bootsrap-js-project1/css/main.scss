@@ -1,0 +1,31 @@
+$raudona: red;
+$svoris1: 600;
+$svoris2: $svoris1/2;
+section {
+    article {
+        color: $raudona;
+        font: {
+            size: 29px;
+            weight: 600;
+             }
+    }
+    p {
+        font: {
+            weight: 300;
+            size: 16px;
+        }
+    }
+}
+
+aside {
+    color: $raudona;
+    width: 36px;
+    height: $svoris2+px;
+    }
+    p {
+        font: {
+            size: 14px;
+            weight: $svoris1;
+        }
+
+}
