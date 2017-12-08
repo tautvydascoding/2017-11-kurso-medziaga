@@ -15,6 +15,7 @@
  // nustato formata, kuris palaiko liekutviu simbolius
  mysqli_set_charset($connection, 'utf8'); // !!!  utf8 - "-" skyriklio, nes neveiks
 
+
  function getConnection() {
      global $connection;
      // if ($connection == false) {
