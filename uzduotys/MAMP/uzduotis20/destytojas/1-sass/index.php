@@ -13,16 +13,15 @@
     <body  >
 
         <div class="container bg-info">
-            <h1>Isijunk konsole</h1>
-
+            <h1>Isijunk konsole</h1> 
         </div>
-
+        <h1>Isijunk konsole</h1>
 
 
 
 
         <!--  !!! patartina failo apacioje   -->
- 
+
         <script type="text/javascript" src="./libs/jquery-3.2.1.js"> </script>
         <!-- !!! mano js failas visada zemiau -->
         <script type="text/javascript" src="./main.js?ver=1.0.0"> </script>
