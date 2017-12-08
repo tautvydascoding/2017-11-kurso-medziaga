@@ -31,15 +31,15 @@ function getDoctor($connection, $nr){ //nr ir prisijung yra local!!!!!!!!
     }
 }
 
-// $daktaras = getDoctor($connection, 3);
-// print_r($daktaras);
+$daktaras = getDoctor($connection, 3);
+print_r($daktaras);
 //
 // echo "<br />Daktaras:" . $daktaras['name'] . "<br />";
 
 // uzduotis 2
 // sukurti f-ja createDoctor(...)
 function createDoctor($connection, $vardas, $pavarde){
-    $mano_sql = "INSERT INTO doctors VALUES('17', '$vardas', '$pavarde');";
+    $mano_sql = "INSERT INTO doctors VALUES('', '$vardas', '$pavarde');";
     $uzklausa = mysqli_query($connection, $mano_sql);
     if($uzklausa){
         echo"issaugojom daktara <br />";
@@ -113,27 +113,27 @@ function getDoctors($prisijung){ //nr ir prisijung yra local!!!!!!!!
 }
 
 $daktarai = getDoctors($connection);
-//
-// if( mysqli_num_rows($daktarai) > 0){
-//     echo "<br />Viso rasta daktaru: " . mysqli_num_rows($daktarai) . "<br />"; //  mysqli_num_rows($daktarai) grazina kiek yra duomenu is viso
-//
-//     // foreach($daktarai as $daktaras){
-//     //     echo "Nr: " . $daktaras ['id'] . "<br />";
-//     //     echo "Vardas: " . $daktaras ['name'] . "<br />";
-//     //     echo "Pavarde: " . $daktaras ['lname'] . "<br /><br />";
-//     // }
-//
-//     //arba
-//     $daktaras = mysqli_fetch_assoc($daktarai); //is mysql OBJEKTO paimama pirma eilute ir sudeda i masyva
-//     while($daktaras){
-//         echo "Nr: " . $daktaras ['id'] . "<br />";
-//         echo "Vardas: " . $daktaras ['name'] . "<br />";
-//         echo "Pavarde: " . $daktaras ['lname'] . "<br /><br />";
-//         $daktaras = mysqli_fetch_assoc($daktarai); //is mysql OBJEKTO paimama pirma eilute ir sudeda i masyva
-//     }
-// } else{
-//     echo "Lentele yra tuscia";
-// }
-// print_r($daktarai);
+
+if( mysqli_num_rows($daktarai) > 0){
+    echo "<br />Viso rasta daktaru: " . mysqli_num_rows($daktarai) . "<br />"; //  mysqli_num_rows($daktarai) grazina kiek yra duomenu is viso
+
+    foreach($daktarai as $daktaras){
+        echo "Nr: " . $daktaras ['id'] . "<br />";
+        echo "Vardas: " . $daktaras ['name'] . "<br />";
+        echo "Pavarde: " . $daktaras ['lname'] . "<br /><br />";
+    }
+
+    //arba
+    // $daktaras = mysqli_fetch_assoc($daktarai); //is mysql OBJEKTO paimama pirma eilute ir sudeda i masyva
+    // while($daktaras){
+    //     echo "Nr: " . $daktaras ['id'] . "<br />";
+    //     echo "Vardas: " . $daktaras ['name'] . "<br />";
+    //     echo "Pavarde: " . $daktaras ['lname'] . "<br /><br />";
+    //     $daktaras = mysqli_fetch_assoc($daktarai); //is mysql OBJEKTO paimama pirma eilute ir sudeda i masyva
+    // }
+} else{
+    echo "Lentele yra tuscia";
+}
+print_r($daktarai);
 //
 // echo "<br />Daktarai:" . $daktaras['name'] . "<br />";
