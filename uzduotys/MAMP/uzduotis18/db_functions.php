@@ -9,7 +9,7 @@ define('DB_HOST', 'localhost' );
 $connection = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
 // // But, this will affect $mysqli->real_escape_string();
-$mysqli_set_charset('utf8');
+ mysqli_set_charset('utf8');
 // Note: Possible UTF-8 confusion
 // Because character set names in MySQL do not contain dashes, the string "utf8" is valid in MySQL to set the character set to UTF-8. The string "utf-8" is not valid, as using "utf-8" will fail to change the character set.
 
@@ -141,7 +141,7 @@ function updateUser($nr, $vardas, $slaptazodis, $elPastas, $rights) {
   $data = stripslashes($data);
   $data = htmlspecialchars($data);
   return $data;
-} 
+}
 
 // !!
 // mysqli_close(getConnection());

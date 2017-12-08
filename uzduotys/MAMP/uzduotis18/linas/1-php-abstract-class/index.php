@@ -29,3 +29,6 @@ echo "Monikos2 ugis:" .  $Monika2->ugis . "<br>";
 $Monika->print();
 //
 echo "Monikos2 ugis:" .  $Monika->getSvoris() . "<br>";
+$Monika->setsvoris(137);
+echo "Monikos2 ugis:" .  $Monika->getSvoris() . "<br>";
+echo "estrogenai:" .  $Monika->getEstrogenai(). "<br>";
