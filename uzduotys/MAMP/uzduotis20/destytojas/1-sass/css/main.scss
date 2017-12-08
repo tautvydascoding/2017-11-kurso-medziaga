@@ -1,0 +1,11 @@
+h1 {
+    color: blue;
+}  
+
+$color: red;
+.container {
+    background-color: $color;
+    h1 {
+            background-color: #b2b2b2;
+    }
+}
