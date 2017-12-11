@@ -1,0 +1,16 @@
+.antraste {
+  color: red;
+  font-size: 29px;
+  font-weight: 600; }
+
+section p {
+  font-size: 16px;
+  font-weight: 300; }
+
+aside {
+  background-color: red;
+  width: 36px;
+  height: 300px; }
+  aside p {
+    font-size: 14px;
+    font-weight: 600; }
