@@ -32,7 +32,7 @@ endif;?>
           <i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Market</span>
         </div>
       </a>
-      <a href="#">
+      <!-- <a href="#">
         <div class="dashboard-item">
           <i class="fa fa-cog" aria-hidden="true"></i><span>Settings</span>
         </div>
@@ -46,7 +46,7 @@ endif;?>
         <div class="dashboard-item">
           <i class="fa fa-cog" aria-hidden="true"></i><span>Support</span>
         </div>
-      </a>
+      </a> -->
 
     </div>
   </div>
