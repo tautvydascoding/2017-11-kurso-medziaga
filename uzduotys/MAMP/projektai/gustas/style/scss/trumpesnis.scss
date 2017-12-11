@@ -1,0 +1,52 @@
+$melsva-mes: #1d2a4f;
+$prx1: fixed;
+$prx2: center;
+$prx3: no-repeat;
+$prx4: cover;
+$prx5: 80%;
+
+.uzrasas{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+
+    .main{
+        margin-top: 20%;
+        border-bottom: solid 2px $melsva-mes;}
+
+    .title{
+        margin-top: 20%;
+        color: #fff;}
+
+    .istorija{
+        color: $melsva-mes;
+        border-bottom: solid 2px $melsva-mes;}
+}
+
+.info{
+    color: #fff;
+    text-align: center;
+    .weight{
+        font-weight: 600;
+}}
+
+.parralax{
+    height: $prx5;
+    background-attachment: $prx1;
+    background-position: $prx2;
+    background-repeat: $prx3;
+    background-size: $prx4;
+
+    .parallax-viz {
+        background-image: url("../../pictures/vision.png");
+    }
+    .parallax-slov {
+        background-image: url("../../pictures/worship.jpg");
+    }
+    .parallax-mes {
+        background-image: url("../../pictures/crowd2.jpg");
+    }
+    .parallax-istorija {
+        background-image: url("../../pictures/bible-stud.jpg");
+    }
+}

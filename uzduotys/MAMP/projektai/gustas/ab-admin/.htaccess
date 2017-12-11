@@ -1,0 +1,4 @@
+AuthName "admin authentication"
+AuthUserFile C:/Users/augus/Desktop/kursu-projektas/ab-admin/.htpasswd
+AuthType Basic
+require valid-user
