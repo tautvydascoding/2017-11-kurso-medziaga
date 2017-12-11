@@ -1,0 +1,513 @@
+html, body{
+  height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  background-color: #020104;
+}
+
+/* --------------------------- BENDROS -------------------------- */
+
+.no-float{
+  clear: both;
+  content: '';
+}
+a:hover{
+    cursor: pointer;
+    &:link{
+        text-decoration: none;
+    }
+}
+p{
+    color: #F4F4F4;
+}
+h1, .display-track-name{
+    color: #1481BA; /* track album plays */
+}
+h2{
+    color: #EB5E28; /* usernames, track + album plays digit */
+}
+h3{
+    color: #202223; /* album title color */
+}
+strong{
+    color: #F4F4F4;
+}
+li{
+    color: #1481BA;
+    &:hover{
+        color: #CCB951;
+    }
+}
+hr{
+    border: 0;
+    height: 1px;
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+/* --------------------------- FUNKCIJOS -------------------------- */
+
+.hidden-active{
+    display: none;
+}
+.emailPo label{
+    font-size: 34px;
+}
+iframe{
+    visibility: hidden;
+}
+
+/* --------------------------- NAVIGATION -------------------------- */
+
+nav{
+    position: fixed;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+    z-index: 99;
+    ul{
+        list-style: none;
+        padding: 0;
+        li{
+            text-orientation: upright;
+            writing-mode: vertical-lr;
+            word-spacing: 6px;
+            margin-right: 5px;
+            a{
+                text-decoration: none;
+                color: gold;
+                opacity: 0.4;
+                font-size: 17px;
+                transition: all 0.5s ease;
+                &:hover{
+                    text-decoration: none;
+                    color: gold;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+
+/* --------------------------- HEADER -------------------------- */
+
+header{
+    height: 100vh;
+    background-image: url("../img/mposh.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+    img{
+        position: absolute;
+        top: 20vh;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 2px solid white;
+    }
+}
+main{
+    height: 1366px;
+}
+.social{
+    position: absolute;
+    top: 80vh;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    width: 60%;
+    min-width: 255px;
+    max-width: 540px;
+    a{
+        color: white;
+        opacity: 0.6;
+        &:hover{
+            opacity: 1;
+            color: gold;
+            transition: all 0.5s ease;
+        }
+    }
+}
+
+/* --------------------------- PLAYER -------------------------- */
+/* Desinej lango pusej fixuotas */
+/* Be wrapo nera centro */
+
+.SCP-player-wrap{
+    width: 455px;
+    height: 1365px;
+    padding-right: 20px;
+    background-color: none;
+}
+.SCPlayer-scroll-TTF{
+    margin-top: 25px;
+}
+.SCPlayer-scroll-DE{
+    margin-top: 475px;
+}
+.SCPlayer-scroll-LE{
+    margin-top: 935px;
+}
+#SCPlayer{
+    transition: all 0.5s ease;
+}
+.SCP{
+    background-color: rgba(228, 228, 228, 0.8);
+    height: 400px;
+    width: 220px;
+    background-color: #bebab4;
+}
+.SCP-top{
+    background-color: #22232a;
+    height: 95px;
+    color: #E7F0F7;
+    padding: 10px;
+}
+.SCP-pp-button{
+    width: 40px;
+    height: 30px;
+    background-color: Transparent;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    color: #E7F0F7;
+}
+.display-description{
+    color: rgb(14, 14, 14);
+}
+.display-track-name{
+    color: #EB5E28;
+}
+#SCP-art{
+    border-radius: 50%;
+}
+
+/* --------------------------- ALBUMS -------------------------- */
+
+.albumu-Wraper{
+    min-width: 455px;
+    min-height: 455px;
+}
+.albumo-dydis{
+    width: 455px;
+    height: 455px;
+}
+.albumo-info-play-dydis{
+    width: 227px;
+    height: 227px;
+    text-align: center;
+    padding-top: 10px;
+}
+.albumo-info{
+    background-color: rgba(251, 251, 251, 0.9);
+}
+/* pakeitus itema reikia keisti ir padding */
+.album-play-vertical{
+    padding-top: 100px;
+}
+.albumo-info p{
+    color: #0D1B2A;
+}
+
+/* --------------------- ALBUM BACKGROUNDS -------------------- */
+.album-background-pos{
+    background-position: center;
+    background-size: cover;
+}
+.album1-background{
+    background-image: url(../img/albumai/album4.jpg);
+}
+.album2-background{
+    background-image: url(../img/albumai/album3.jpg);
+}
+.album3-background{
+    background-image: url(../img/albumai/album6.jpg);
+}
+
+/* --------------------------- STATS -------------------------- */
+
+.statsWraper{
+    width: 227px;
+    height: 1365px;
+}
+.statsKubas{
+    width: 227px;
+    height: 227px;
+    img{
+        filter: grayscale(100%);
+        transition: all 0.5s ease;
+        &:hover{
+            filter: none;
+        }
+    }
+}
+.kub-centravimas{
+    text-align: center;
+    padding-top: 15%;
+}
+.kub-track-info-bg{
+    background-color: #303B45;
+}
+
+/* --------------------------- REKLAMA + SLIDESHOW -------------------------- */
+
+.reklamos-Wraper{
+    width: 229px;
+    height: 1366px;
+}
+.mySlides {
+    display: none;
+    img{
+        width: 229px;
+        height: 1366px;
+        opacity: 0.6;
+        filter: grayscale(100%);
+        transition: all 0.5s ease;
+        &:hover{
+            opacity: 1;
+            filter: none;
+        }
+    }
+}
+
+/* Reklamos animacij */
+.fade {
+  animation-name: fade;
+  animation-duration: 8s;
+}
+@keyframes fade {
+  0% {
+    opacity: 0.5;
+    animation-delay: 1s;
+    animation-timing-function: ease-in;
+  }
+  5%{
+      opacity: 1;
+  }
+  85%{
+      opacity: 1;
+      animation-timing-function: ease-out;
+  }
+  100%{
+      opacity: 0.5;
+      animation-timing-function: ease-in-out;
+  }
+}
+.no-cssanimations .reklamos-Wraper img {
+	opacity: 1;
+}
+
+/* --------------------------- REVIEWS -------------------------- */
+
+.review-wraper{
+    padding:0;
+    width: 1366px;
+    max-width: 1366px;
+    height: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.review-container{
+    height: 280px;
+}
+.review-user-bg{
+    background-color: #22232a;
+}
+.review-content-bg{
+    background-color: #bebab4;
+    opacity: 0.3;
+    transition: all 0.5s ease;
+    &:hover{
+        opacity: 0.6;
+        color: #EB5E28;
+    }
+}
+.newReviewContentBG{
+    background-color: Transparent;
+    /*border-radius: 10px;*/
+    border: none;
+    resize: none;
+    &:focus{
+        outline: none;
+    }
+}
+.newReviewUserBG{
+    background-color: Transparent;
+    color: #EB5E28;
+    text-transform: uppercase;
+    border: none;
+    border-bottom: 1px solid white;
+    &:focus{
+        outline: none;
+    }
+}
+
+/* --------------------------- CONTACT -------------------------- */
+
+.contacts{
+    background-color: #F4F4F4;
+    padding: 8% 10%;
+    width: 1366px;
+    max-width: 1366px;
+}
+.resizeNone{
+    resize: none;
+}
+
+/* --------------------------- FOOTER -------------------------- */
+
+footer{
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 70px;
+    padding-bottom: 200px;
+    width: 1366px;
+    max-width: 1366px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #8a8a8a;
+    img{
+        min-width: 40px;
+        width: 70px;
+        max-height: 70px;
+    }
+    strong{
+        color: rgb(33, 33, 33);
+    }
+    a{
+        text-decoration: none;
+        color: #F4F4F4;
+        opacity: 0.6;
+        font-size: 14px;
+        transition: all 0.5s ease;
+        &:hover{
+            text-decoration: none;
+            color: gold;
+            opacity: 1;
+        }
+    }
+}
+.footer-items{
+    width: 33.33%;
+    padding: 10px;
+}
+
+/* --------------------------- MEDIA -------------------------- */
+
+@media (min-width: 1440px) and (max-width: 2560px){
+    header{
+        height: 100vh;
+    }
+    header, main, .contacts{
+        width: 1366px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (min-width: 2400px){
+    nav{
+        left: 25%;
+    }
+}
+@media (max-width: 1440px){
+    nav{
+        left: 6%;
+    }
+}
+@media (max-width: 1366px){
+    nav{
+        left: 15%;
+    }
+}
+@media (max-width: 1024px){
+    nav{
+        left: 3%;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1366px){
+    footer img{
+        width: 50px;
+    }
+}
+
+@media (min-width: 1366px) and (max-width: 1440px){
+    header, main{
+        width: 1366px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contacts{
+        width: 1366px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .reklamos-Wraper{
+        visibility: visible;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1366px){
+    header{
+        height: 100vh;
+        width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main{
+        width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+    }
+    .reklamos-Wraper{
+        display: none;
+    }
+    .review-wraper{
+        width: 1024px;
+    }
+    #mp-contacts, footer{
+        width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (max-width: 768px){
+    header, main, #mp-reviews, .contacts, footer{
+        width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .reklamos-Wraper, .statsWraper, .eventsHide{
+        display: none;
+    }
+}
+@media (max-width: 425px){
+    .SCP-player-wrap, .phoneMode, .addReview {
+        display: none !important;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+    }
+    .phoneModeCenter{
+        width: 425px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .review-wraper{
+        height: 640px;
+    }
+    .col-4{
+        max-width: 100%!important;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .mini{
+        display: block !important;
+    }
+
+}
