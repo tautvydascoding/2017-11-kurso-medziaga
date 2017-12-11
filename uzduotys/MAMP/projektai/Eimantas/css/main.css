@@ -1,0 +1,497 @@
+html, body {
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  background-color: #020104; }
+
+/* --------------------------- BENDROS -------------------------- */
+.no-float {
+  clear: both;
+  content: ''; }
+
+a:hover {
+  cursor: pointer; }
+  a:hover:link {
+    text-decoration: none; }
+
+p {
+  color: #F4F4F4; }
+
+h1, .display-track-name {
+  color: #1481BA;
+  /* track album plays */ }
+
+h2 {
+  color: #EB5E28;
+  /* usernames, track + album plays digit */ }
+
+h3 {
+  color: #202223;
+  /* album title color */ }
+
+strong {
+  color: #F4F4F4; }
+
+li {
+  color: #1481BA; }
+  li:hover {
+    color: #CCB951; }
+
+hr {
+  border: 0;
+  height: 1px;
+  padding: 0;
+  margin: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(0, 0, 0, 0.75)), to(transparent));
+  background-image: -webkit-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
+  background-image: -o-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent); }
+
+/* --------------------------- FUNKCIJOS -------------------------- */
+.hidden-active {
+  display: none; }
+
+.emailPo label {
+  font-size: 34px; }
+
+iframe {
+  visibility: hidden; }
+
+/* --------------------------- NAVIGATION -------------------------- */
+nav {
+  position: fixed;
+  top: 50%;
+  left: 15%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 99; }
+  nav ul {
+    list-style: none;
+    padding: 0; }
+    nav ul li {
+      text-orientation: upright;
+      -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+      word-spacing: 6px;
+      margin-right: 5px; }
+      nav ul li a {
+        text-decoration: none;
+        color: gold;
+        opacity: 0.4;
+        font-size: 17px;
+        -webkit-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease; }
+        nav ul li a:hover {
+          text-decoration: none;
+          color: gold;
+          opacity: 1; }
+
+/* --------------------------- HEADER -------------------------- */
+header {
+  height: 100vh;
+  background-image: url("../img/mposh.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 2; }
+  header img {
+    position: absolute;
+    top: 20vh;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border: 2px solid white; }
+
+main {
+  height: 1366px; }
+
+.social {
+  position: absolute;
+  top: 80vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  color: white;
+  width: 60%;
+  min-width: 255px;
+  max-width: 540px; }
+  .social a {
+    color: white;
+    opacity: 0.6; }
+    .social a:hover {
+      opacity: 1;
+      color: gold;
+      -webkit-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
+
+/* --------------------------- PLAYER -------------------------- */
+/* Desinej lango pusej fixuotas */
+/* Be wrapo nera centro */
+.SCP-player-wrap {
+  width: 455px;
+  height: 1365px;
+  padding-right: 20px;
+  background-color: none; }
+
+.SCPlayer-scroll-TTF {
+  margin-top: 25px; }
+
+.SCPlayer-scroll-DE {
+  margin-top: 475px; }
+
+.SCPlayer-scroll-LE {
+  margin-top: 935px; }
+
+#SCPlayer {
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.SCP {
+  background-color: rgba(228, 228, 228, 0.8);
+  height: 400px;
+  width: 220px;
+  background-color: #bebab4; }
+
+.SCP-top {
+  background-color: #22232a;
+  height: 95px;
+  color: #E7F0F7;
+  padding: 10px; }
+
+.SCP-pp-button {
+  width: 40px;
+  height: 30px;
+  background-color: Transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #E7F0F7; }
+
+.display-description {
+  color: #0e0e0e; }
+
+.display-track-name {
+  color: #EB5E28; }
+
+#SCP-art {
+  border-radius: 50%; }
+
+/* --------------------------- ALBUMS -------------------------- */
+.albumu-Wraper {
+  min-width: 455px;
+  min-height: 455px; }
+
+.albumo-dydis {
+  width: 455px;
+  height: 455px; }
+
+.albumo-info-play-dydis {
+  width: 227px;
+  height: 227px;
+  text-align: center;
+  padding-top: 10px; }
+
+.albumo-info {
+  background-color: rgba(251, 251, 251, 0.9); }
+
+/* pakeitus itema reikia keisti ir padding */
+.album-play-vertical {
+  padding-top: 100px; }
+
+.albumo-info p {
+  color: #0D1B2A; }
+
+/* --------------------- ALBUM BACKGROUNDS -------------------- */
+.album-background-pos {
+  background-position: center;
+  background-size: cover; }
+
+.album1-background {
+  background-image: url(../img/albumai/album4.jpg); }
+
+.album2-background {
+  background-image: url(../img/albumai/album3.jpg); }
+
+.album3-background {
+  background-image: url(../img/albumai/album6.jpg); }
+
+/* --------------------------- STATS -------------------------- */
+.statsWraper {
+  width: 227px;
+  height: 1365px; }
+
+.statsKubas {
+  width: 227px;
+  height: 227px; }
+  .statsKubas img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    .statsKubas img:hover {
+      -webkit-filter: none;
+      filter: none; }
+
+.kub-centravimas {
+  text-align: center;
+  padding-top: 15%; }
+
+.kub-track-info-bg {
+  background-color: #303B45; }
+
+/* --------------------------- REKLAMA + SLIDESHOW -------------------------- */
+.reklamos-Wraper {
+  width: 229px;
+  height: 1366px; }
+
+.mySlides {
+  display: none; }
+  .mySlides img {
+    width: 229px;
+    height: 1366px;
+    opacity: 0.6;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    .mySlides img:hover {
+      opacity: 1;
+      -webkit-filter: none;
+      filter: none; }
+
+/* Reklamos animacij */
+.fade {
+  -webkit-animation-name: fade;
+  animation-name: fade;
+  -webkit-animation-duration: 8s;
+  animation-duration: 8s; }
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0.5;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  5% {
+    opacity: 1; }
+  85% {
+    opacity: 1;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  100% {
+    opacity: 0.5;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out; } }
+
+@keyframes fade {
+  0% {
+    opacity: 0.5;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  5% {
+    opacity: 1; }
+  85% {
+    opacity: 1;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  100% {
+    opacity: 0.5;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out; } }
+
+.no-cssanimations .reklamos-Wraper img {
+  opacity: 1; }
+
+/* --------------------------- REVIEWS -------------------------- */
+.review-wraper {
+  padding: 0;
+  width: 1366px;
+  max-width: 1366px;
+  height: 940px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.review-container {
+  height: 280px; }
+
+.review-user-bg {
+  background-color: #22232a; }
+
+.review-content-bg {
+  background-color: #bebab4;
+  opacity: 0.3;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  .review-content-bg:hover {
+    opacity: 0.6;
+    color: #EB5E28; }
+
+.newReviewContentBG {
+  background-color: Transparent;
+  /*border-radius: 10px;*/
+  border: none;
+  resize: none; }
+  .newReviewContentBG:focus {
+    outline: none; }
+
+.newReviewUserBG {
+  background-color: Transparent;
+  color: #EB5E28;
+  text-transform: uppercase;
+  border: none;
+  border-bottom: 1px solid white; }
+  .newReviewUserBG:focus {
+    outline: none; }
+
+/* --------------------------- CONTACT -------------------------- */
+.contacts {
+  background-color: #F4F4F4;
+  padding: 8% 10%;
+  width: 1366px;
+  max-width: 1366px; }
+
+.resizeNone {
+  resize: none; }
+
+/* --------------------------- FOOTER -------------------------- */
+footer {
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 70px;
+  padding-bottom: 200px;
+  width: 1366px;
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #8a8a8a; }
+  footer img {
+    min-width: 40px;
+    width: 70px;
+    max-height: 70px; }
+  footer strong {
+    color: #212121; }
+  footer a {
+    text-decoration: none;
+    color: #F4F4F4;
+    opacity: 0.6;
+    font-size: 14px;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    footer a:hover {
+      text-decoration: none;
+      color: gold;
+      opacity: 1; }
+
+.footer-items {
+  width: 33.33%;
+  padding: 10px; }
+
+/* --------------------------- MEDIA -------------------------- */
+@media (min-width: 1440px) and (max-width: 2560px) {
+  header {
+    height: 100vh; }
+  header, main, .contacts {
+    width: 1366px;
+    margin-left: auto;
+    margin-right: auto; } }
+
+@media (min-width: 2400px) {
+  nav {
+    left: 25%; } }
+
+@media (max-width: 1440px) {
+  nav {
+    left: 6%; } }
+
+@media (max-width: 1366px) {
+  nav {
+    left: 15%; } }
+
+@media (max-width: 1024px) {
+  nav {
+    left: 3%; } }
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  footer img {
+    width: 50px; } }
+
+@media (min-width: 1366px) and (max-width: 1440px) {
+  header, main {
+    width: 1366px;
+    margin-left: auto;
+    margin-right: auto; }
+  .contacts {
+    width: 1366px;
+    margin-left: auto;
+    margin-right: auto; }
+  .reklamos-Wraper {
+    visibility: visible; } }
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  header {
+    height: 100vh;
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto; }
+  main {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px; }
+  .reklamos-Wraper {
+    display: none; }
+  .review-wraper {
+    width: 1024px; }
+  #mp-contacts, footer {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto; } }
+
+@media (max-width: 768px) {
+  header, main, #mp-reviews, .contacts, footer {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto; }
+  .reklamos-Wraper, .statsWraper, .eventsHide {
+    display: none; } }
+
+@media (max-width: 425px) {
+  .SCP-player-wrap, .phoneMode, .addReview {
+    display: none !important; }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .phoneModeCenter {
+    width: 425px;
+    margin-left: auto;
+    margin-right: auto; }
+  .review-wraper {
+    height: 640px; }
+  .col-4 {
+    max-width: 100% !important;
+    margin-left: auto;
+    margin-right: auto; }
+  .mini {
+    display: block !important; } }
