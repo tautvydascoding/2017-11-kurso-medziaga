@@ -1,0 +1,83 @@
+.headerToogler {
+  min-height: 90px;
+  background-color: #000000;
+}
+
+.produktai {
+  padding: 0;
+  height: 40vw;
+}
+
+.produktai .produktaiMainImg {
+  width: 100%;
+  height: 45vw;
+  position: fixed;
+}
+
+.produktai .produktaiMainImg img {
+  width: 100%;
+  height: 100%;
+}
+
+.produktai .produktaiMainImg h1 {
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  text-shadow: 2px 2px #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.produktai .produktaiWrapper {
+  background-size: cover;
+  z-index: 1;
+  background-color: #fff;
+  position: relative;
+  width: 100%;
+  top: 50vw;
+  padding-top: 80px;
+}
+
+.produktai .produktaiWrapper .produktas {
+  width: 100%;
+  position: relative;
+  height: 35vw;
+  border-bottom: .3em solid red;
+}
+
+.produktai .produktaiWrapper .produktas:nth-child(n+2) {
+  margin-top: 60px;
+}
+
+.produktai .produktaiWrapper .produktas img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 50%;
+  height: 23vw;
+}
+
+.produktai .produktaiWrapper .produktas h2 {
+  position: absolute;
+  top: 0;
+  right: 12%;
+  font-size: 2vw;
+  font-weight: bold;
+  padding-top: 15%;
+}
+
+.produktai .produktaiWrapper .produktas p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: .9vw;
+}

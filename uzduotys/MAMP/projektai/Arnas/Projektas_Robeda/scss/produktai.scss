@@ -1,0 +1,99 @@
+// Kintamieji
+$headerAukstis:90px;
+$headetColor: #000000;
+$color: red;
+@mixin positionAbsoluteCenterS(){
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+@mixin absolute($args) {
+	$offsets: top right bottom left;
+	@each $o in $offsets {
+		$i: index($args, $o);
+		@if $i
+		and $i + 1 <= length($args)
+		and type-of( nth($args, $i + 1) ) == number {
+			#{$o}: nth($args, $i + 1);
+		}
+	}
+}
+// Uzpildyti tarpui ten kur yra header
+.headerToogler{
+  min-height: $headerAukstis;
+  background-color: $headetColor;
+}
+// Main dalis
+.produktai{
+  padding: 0;
+  height: 40vw;
+  .produktaiMainImg{
+    width: 100%;
+    height: 45vw;
+    position: fixed;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+      h1{
+        color: #fff;
+        font-weight: bold;
+        position: absolute;
+        text-shadow: 2px 2px #000;
+        @include positionAbsoluteCenterS()
+        z-index: 2;
+      }
+  }
+    .produktaiWrapper{
+      background-size: cover;
+      z-index: 1;
+      background-color: #fff;
+      position: relative;
+      width: 100%;
+      top: 50vw;
+      //height: 200%;
+      padding-top: 80px;
+        .produktas{
+          //background-size: cover;
+          &:nth-child(n+2) {margin-top: 60px;}
+          width: 100%;
+          position: relative;
+          height: 35vw;
+          border-bottom: .3em solid red;
+            img{
+              position: absolute;
+              @include absolute(top 0 left 0);
+                margin:{
+                  left: 20px;
+                  top: 20px;
+                }
+                width: 50%;
+                height: 23vw;
+            }
+            h2{
+              position: absolute;
+              @include absolute(top 0 right 12%);
+                font:{
+                  size: 2vw;
+                  weight: bold;
+                }
+                padding:{
+                  top:15%;
+                }
+            }
+            p{
+              position: absolute;
+              @include absolute(left 0 bottom 0);
+              margin:{
+                left: 30px;
+                //bottom: 20px;
+                right: 30px;
+              }
+              font:{
+                size: .9vw;
+              }
+            }
+        }
+    }
+}

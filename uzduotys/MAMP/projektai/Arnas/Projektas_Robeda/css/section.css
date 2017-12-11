@@ -1,0 +1,88 @@
+.meniu h1{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-shadow: 1px 1px #fff;
+    color: #4d0000;
+    opacity: 0.88;
+}
+.meniu a{
+  text-decoration: none;
+  color: #000;
+}
+.meniu a h5{
+  font-size: .888vw;
+}
+
+.mainSection{
+    position: relative;
+    width: 100%;
+    top: 100vh;
+    height: 100%;
+}
+.patiekaloTipas{
+    /*border: 15px ridge red;*/
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 51vw;
+    overflow: hidden;
+    /*box-shadow: 0px 2px 2px 15px rgba(0,0,0,0.75);*/
+}
+.patiekaloTipas h5{
+    padding: 15px 0 15px 0px;
+    color: #000;
+    font-weight: bold;
+    background-color: #d9d9d9;
+    margin:5px;
+}
+.patiekaloTipas h5:hover{
+    border: 1px solid #4d0000;
+    box-shadow: 2px 2px 2px #4d0000;
+}
+.patiekaloTipas #activeH5:active{
+    border: 1px solid #4d0000;
+    box-shadow: 2px 2px 2px #4d0000;
+}
+
+.patiekalai{
+    background-image:  url('../img/tree.jpg');
+    opacity: 0.7;
+    overflow: scroll;
+    height: 45vw;
+}
+.patiekalai .patiekalas{
+    height: 30vh;
+    /*background: #b3b3b3;*/
+    /*opacity: 0.888;*/
+     background: rgba(192,192,192,0.3);
+     border-color: #fff;
+     border-right:  solid 10px #fff ;
+     border-bottom:  solid 10px #fff ;
+     position: relative;
+}
+.patiekalai .patiekalas:nth-child(4n+1){
+    border-left:  solid 10px #fff ;
+    }
+.patiekalai .patiekalas h4{
+    color: #000; font-family: "Great Vibes", cursive; font-size: 26px; line-height: 15px; font-weight: normal; margin-bottom: 15px; margin-top: 5px; text-align: left; text-shadow: 0 1px 1px #d9d9d9;
+}
+.patiekalai .patiekalas p{ color: #000; font-size: 16px; font-family: "Libre Baskerville", serif; line-height: 15px; text-align: center; padding-top: 10px;
+}
+.patiekalai .patiekalas h5{
+    border-top: 1px solid #000;
+    color: #000; font-family: "Great Vibes", cursive; font-size: 20px; line-height: 15px; font-weight: normal; margin-bottom: 5px; margin-top: 5px; text-align: right; text-shadow: 0 1px 1px #d9d9d9;
+    padding-top: 5px;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    margin-right: 5px;
+    width: 95%;
+}

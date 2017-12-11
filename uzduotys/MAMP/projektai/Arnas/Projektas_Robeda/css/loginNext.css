@@ -1,0 +1,39 @@
+label{
+margin-top: 25px;
+}
+button{
+  margin-top: 25px;
+}
+.center{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+section{
+  height: 45vw;
+}
+section:nth-child(2n+1){
+  border-bottom: 10px dotted red;
+}
+.aaa{
+  position: relative;
+  height: 45vw;
+}
+.aaa .dydis{
+  height: 250px;
+  margin-top: 15vw;
+  margin-left: 30px;
+}
+.aaa .dydis h2{
+  text-align: center;
+  color:#000;
+  padding-top: 50px;
+}
+.aaa .dydis a{
+  text-decoration: none;
+}
+.aaa .dydis h2:hover{
+    text-shadow: 2px 2px 2px #000;
+    opacity: 0.888;
+}

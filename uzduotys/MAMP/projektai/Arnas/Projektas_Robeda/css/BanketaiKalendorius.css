@@ -1,0 +1,72 @@
+body{
+  box-sizing: border-box;
+}
+.mainSection{
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+    top: 50vw;
+    height: 100%;
+    background-size: cover;
+}
+.calender .dateName{
+    padding: 30px 15px 0px 15px;
+    border-bottom: 2px solid red;
+}
+.calender .dateName h3{
+    font-size: 2vw;
+}
+.calender .dateName .arrowL{
+    float: left;
+    /*border-width: 15px 20px 15px 0;*/
+    border-width: 1vw 1.5vw 1vw 0;
+    border-color: transparent #000 transparent transparent;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    margin-top: 5px;
+    border-style: solid;
+}
+.calender .dateName .arrowR{
+    float:right;
+    /*border-width: 15px 0 15px 20px;*/
+    border-width: 1vw 0 1vw 1.5vw;
+    border-color: transparent transparent transparent #000;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    margin-top: 5px;
+    border-style: solid;
+}
+.calender .dateName .arrowL{
+
+}
+.calender .kalendorius {
+    background-color: #fff;
+    width: 100%;
+    height: 40vw;
+    border-bottom: 2px solid #000;
+}
+.calender .kalendorius table{
+    margin-top:10px;
+}
+.calender .kalendorius table tr th{
+    text-align: center;
+    background-color: #999999;
+    font-size: 1.2vw;
+}
+.calender .kalendorius table tr td{
+    height: 7vw;
+    text-align: right;
+    font-size: 1vw;
+
+}
+.calender .kalendorius table tr:nth-child(2n+3){
+    background-color: #d9d9d9;
+}
+.calender .kalendorius table tr td:nth-child(7n){
+    color: red;
+}
+.calender .kalendorius table tr td:nth-child(6n){
+    color: red;
+}
