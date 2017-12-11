@@ -1,0 +1,24 @@
+.container {
+  background-color: #cbc9d2; }
+  .container h1 {
+    background-color: #b2b2b2; }
+
+section #antraste {
+  color: red;
+  font-size: 29px;
+  font-weight: 600; }
+
+section p {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 10vh; }
+
+aside #antraste2 {
+  color: red;
+  font-size: 36px;
+  font-weight: 300; }
+
+aside p:hover {
+  font-size: 14px;
+  font-weight: 800;
+  width: 500px; }
